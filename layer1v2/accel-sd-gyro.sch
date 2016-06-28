@@ -2466,7 +2466,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="R1" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="10K"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
-<part name="R4" library="microbuilder" deviceset="RESISTOR" device="_0805MP" value="10K"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="R5" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="10K"/>
@@ -2479,6 +2478,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="C3" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.1uF"/>
 <part name="C1" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.1uF"/>
 <part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="4.7uF"/>
+<part name="R4" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -2507,7 +2507,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <instance part="R1" gate="G$1" x="134.62" y="22.86" rot="R90"/>
 <instance part="+3V4" gate="G$1" x="134.62" y="35.56"/>
 <instance part="+3V5" gate="G$1" x="134.62" y="-5.08" rot="R180"/>
-<instance part="R4" gate="G$1" x="154.94" y="71.12" rot="R90"/>
 <instance part="+3V1" gate="G$1" x="154.94" y="60.96" rot="R180"/>
 <instance part="+3V7" gate="G$1" x="63.5" y="91.44"/>
 <instance part="R5" gate="G$1" x="167.64" y="68.58" rot="R90"/>
@@ -2520,6 +2519,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <instance part="C3" gate="G$1" x="30.48" y="15.24"/>
 <instance part="C1" gate="G$1" x="10.16" y="15.24"/>
 <instance part="C2" gate="G$1" x="20.32" y="15.24"/>
+<instance part="R4" gate="G$1" x="154.94" y="71.12" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2787,8 +2787,8 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </segment>
 <segment>
 <wire x1="154.94" y1="63.5" x2="154.94" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="106.68" y1="83.82" x2="63.5" y2="83.82" width="0.1524" layer="91"/>
@@ -2855,8 +2855,8 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <segment>
 <wire x1="139.7" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
 <label x="142.24" y="76.2" size="1.778" layer="95"/>
-<pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="IC2" gate="G$1" pin="CS"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
