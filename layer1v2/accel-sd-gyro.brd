@@ -6,16 +6,16 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -197,10 +197,10 @@
 <text x="3.556" y="18.161" size="0.8128" layer="22" font="vector" ratio="15" rot="MR270">9</text>
 <text x="3.429" y="35.941" size="0.8128" layer="22" font="vector" ratio="15" rot="MR270">2</text>
 <text x="3.429" y="39.243" size="0.8128" layer="22" font="vector" ratio="15" rot="MR270">GND</text>
-<text x="13.462" y="21.336" size="1.016" layer="22" font="vector" ratio="15" rot="MR270">William Laney  2016</text>
-<text x="9.144" y="21.336" size="1.016" layer="22" font="vector" ratio="15" rot="MR270">W&amp;M Physics   VIMS</text>
-<text x="6.985" y="21.336" size="1.016" layer="22" font="vector" ratio="15" rot="MR270">Shankduino V1 Layer 1</text>
-<text x="11.303" y="21.336" size="1.016" layer="22" font="vector" ratio="15" rot="MR270">welaney@email.wm.edu</text>
+<text x="12.954" y="45.466" size="1.016" layer="22" font="vector" ratio="15" rot="MR270">William Laney 2016</text>
+<text x="8.128" y="45.212" size="1.016" layer="22" font="vector" ratio="15" rot="MR270">W&amp;M Physics   VIMS</text>
+<text x="5.715" y="45.339" size="1.016" layer="22" font="vector" ratio="15" rot="MR270">Shankduino V1 Layer 1</text>
+<text x="10.287" y="45.466" size="1.016" layer="22" font="vector" ratio="15" rot="MR270">welaney@email.wm.edu</text>
 </plain>
 <libraries>
 <library name="SparkFun">
