@@ -2451,7 +2451,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <parts>
 <part name="U1" library="SparkFun" deviceset="MMA8452Q" device=""/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
-<part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="U2" library="SparkFun" deviceset="USD-SOCKET" device="SMD" value="microSD"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="M12" device="PTH"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="M12" device="PTH"/>
@@ -2489,7 +2488,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <instances>
 <instance part="U1" gate="G$1" x="50.8" y="20.32"/>
 <instance part="GND1" gate="1" x="38.1" y="2.54"/>
-<instance part="GND2" gate="1" x="91.44" y="2.54"/>
 <instance part="U2" gate="G$1" x="172.72" y="38.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="167.386" y="54.102" size="1.778" layer="95"/>
 <attribute name="VALUE" x="163.576" y="14.986" size="1.778" layer="96"/>
@@ -2674,12 +2672,9 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <net name="SA0" class="0">
 <segment>
 <wire x1="63.5" y1="12.7" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="5.08" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="12.7" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
-<junction x="91.44" y="12.7"/>
 <label x="66.04" y="12.7" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="SA0"/>
-<pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
