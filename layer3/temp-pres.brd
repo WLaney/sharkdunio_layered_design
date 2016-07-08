@@ -1758,19 +1758,12 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U2" pad="2"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
-<wire x1="8.27" y1="8.75" x2="7.62" y2="8.75" width="0.254" layer="16"/>
-<wire x1="7.62" y1="8.75" x2="7.245" y2="8.75" width="0.254" layer="16"/>
+<wire x1="8.27" y1="8.75" x2="7.245" y2="8.75" width="0.254" layer="16"/>
 <wire x1="7.245" y1="8.75" x2="6.97" y2="9.025" width="0.254" layer="16"/>
 <wire x1="8.27" y1="8.75" x2="8.27" y2="8.24" width="0.254" layer="16"/>
 <wire x1="13.205840625" y1="5.573584375" x2="13.205840625" y2="5.844159375" width="0.254" layer="16"/>
-<wire x1="13.205840625" y1="5.844159375" x2="12.7" y2="6.35" width="0.254" layer="16"/>
 <wire x1="12.7" y1="6.35" x2="12.7" y2="7.146696875" width="0.254" layer="16"/>
 <wire x1="12.7" y1="7.146696875" x2="12.696696875" y2="7.15" width="0.254" layer="16"/>
-<wire x1="12.696696875" y1="7.15" x2="12.696696875" y2="11.426696875" width="0.254" layer="16"/>
-<wire x1="12.696696875" y1="11.426696875" x2="12.7" y2="11.43" width="0.254" layer="16"/>
-<via x="12.7" y="11.43" extent="1-16" drill="0.508"/>
-<via x="7.62" y="11.43" extent="1-16" drill="0.508"/>
-<wire x1="7.62" y1="11.43" x2="7.62" y2="8.75" width="0.254" layer="16"/>
 <polygon width="0.254" layer="1" isolate="0.3048">
 <vertex x="0" y="11.43"/>
 <vertex x="0" y="1.27"/>
@@ -1781,6 +1774,19 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="13.97" y="12.7"/>
 <vertex x="1.27" y="12.7"/>
 </polygon>
+<polygon width="0.254" layer="16" isolate="0.3048">
+<vertex x="1.524" y="12.7"/>
+<vertex x="13.97" y="12.7"/>
+<vertex x="16.51" y="10.16"/>
+<vertex x="16.51" y="2.54"/>
+<vertex x="13.97" y="0"/>
+<vertex x="1.143" y="0"/>
+<vertex x="1.143" y="0.127"/>
+<vertex x="0" y="1.27"/>
+<vertex x="0" y="11.43"/>
+<vertex x="1.27" y="12.7"/>
+</polygon>
+<via x="15.367" y="7.62" extent="1-16" drill="0.508"/>
 </signal>
 <signal name="SCL">
 <contactref element="U2" pad="1"/>
