@@ -1805,9 +1805,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.89" y1="1.27" x2="7.874" y2="1.27" width="0.254" layer="1"/>
 <wire x1="7.874" y1="1.27" x2="7.62" y2="1.524" width="0.254" layer="1"/>
 </signal>
-<signal name="SDO">
-<contactref element="U2" pad="8"/>
-</signal>
 <signal name="+3V3">
 <contactref element="R4" pad="1"/>
 <contactref element="U2" pad="5"/>
