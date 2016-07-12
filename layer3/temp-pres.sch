@@ -2838,9 +2838,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <sheets>
 <sheet>
 <plain>
-<text x="39.116" y="12.192" size="1.778" layer="97">10010010 (0x92) when jumpered to VCC.
+<text x="39.116" y="12.192" size="1.778" layer="97">10010010 (0x92) when ADD0 to VCC.
 
-10010000 (0x90) when jumpered to GND. (default)</text>
+10010000 (0x90) when ADD0 to GND. </text>
 <text x="129.54" y="68.58" size="1.778" layer="97" align="top-left">Pull high for 0x76.
 Pull low for 0x77
 </text>
