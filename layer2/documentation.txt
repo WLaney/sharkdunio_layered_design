@@ -1,3 +1,6 @@
+This board was desgined by William Laney as part of the College of William and Mary's physics REU programe, 2016. 
+Questions or concerns can be directed at William Laney at welaney@email.wm.edu
+
 This is a breakout board for the DS3234 IC and the MCP7381 IC. The DS3234 is a real time clock (RTC) with battery backup. The MCP7381 is a power regulator for LiPo battery charging from USB. This board can be viewed as a shield for an 3.3V Arduino Pro Mini as it can stack ontop of the pro mini.
 
 In addition to the ICs listed above this board contains a female micro USB (uUSB) port, a 12mm coin cell slot, and a male JPL 2 prong connector. The male JPL 2 prong connector is to connect a LiPo battery to the board. The 12mm coin cell slot holds a CR1225 coin cell battery that acts as the battery backup for the DS3234. The female uUSB port is for charging the LiPo battery.
