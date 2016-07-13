@@ -2826,7 +2826,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U1" library="SparkFun-Sensors" deviceset="TMP102" device="1:1"/>
 <part name="U2" library="MS5803" deviceset="MS5803-14BA" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="J1" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
 <part name="R1" library="microbuilder" deviceset="RESISTOR" device="_0805MP" value="2.2K"/>
 <part name="R2" library="microbuilder" deviceset="RESISTOR" device="_0805MP" value="2.2K"/>
 <part name="R3" library="microbuilder" deviceset="RESISTOR" device="_0805MP" value="1K"/>
@@ -2834,6 +2833,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C1" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.1uF"/>
 <part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.1uF"/>
+<part name="J2" library="SparkFun-Connectors" deviceset="M04" device="NO_SILK_ALL_ROUND"/>
 </parts>
 <sheets>
 <sheet>
@@ -2849,7 +2849,6 @@ Pull low for 0x77
 <instance part="U1" gate="G$1" x="27.94" y="27.94"/>
 <instance part="U2" gate="G$1" x="104.14" y="71.12"/>
 <instance part="GND1" gate="1" x="20.32" y="63.5"/>
-<instance part="J1" gate="G$1" x="55.88" y="68.58"/>
 <instance part="R1" gate="G$1" x="33.02" y="71.12" rot="R90"/>
 <instance part="R2" gate="G$1" x="43.18" y="71.12" rot="R90"/>
 <instance part="R3" gate="G$1" x="55.88" y="30.48" rot="R270"/>
@@ -2857,6 +2856,7 @@ Pull low for 0x77
 <instance part="GND2" gate="1" x="7.62" y="63.5"/>
 <instance part="C1" gate="G$1" x="7.62" y="71.12"/>
 <instance part="C2" gate="G$1" x="20.32" y="71.12"/>
+<instance part="J2" gate="G$1" x="55.88" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -2868,9 +2868,9 @@ Pull low for 0x77
 <pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="66.04" x2="63.5" y2="66.04" width="0.1524" layer="91"/>
 <label x="63.5" y="66.04" size="1.27" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="ADD0"/>
@@ -2906,9 +2906,9 @@ Pull low for 0x77
 <label x="96.52" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="68.58" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
 <label x="63.5" y="68.58" size="1.27" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="43.18" y1="66.04" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
@@ -2928,9 +2928,9 @@ Pull low for 0x77
 <label x="96.52" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="60.96" y1="71.12" x2="63.5" y2="71.12" width="0.1524" layer="91"/>
 <label x="63.5" y="71.12" size="1.27" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <wire x1="33.02" y1="66.04" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
@@ -2993,9 +2993,9 @@ Pull low for 0x77
 <label x="7.62" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="60.96" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
 <label x="63.5" y="73.66" size="1.27" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$1" class="0">
