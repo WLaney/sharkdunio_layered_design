@@ -1,24 +1,24 @@
-This board was desgined by William Laney as part of the College of William and Mary's physics REU programe, 2016. 
-Questions or concerns can be directed at William Laney at welaney@email.wm.edu
+This board was desgined by William Laney as part of the College of William and Mary's 2016 physics REU program. 
+Questions or concerns can be directed to William Laney at welaney@email.wm.edu
 
-This is a breakout board for the TMP102 tempreture sensor and the MS5803-14BA pressure sensor. This board can be viewed as a complement to the layer1 and layer2 boards. These sensors are not presnet of those boards so that they can be physicaly seprated and exposed to water. The MS5803-14BA can be directly exposed to water. A theroconductive materal should sepreate the TMP102 for the water. Both of these ICs communicate over I2C
+This is a breakout board for the TMP102 tempreture sensor and the MS5803-14BA pressure sensor. This board can be viewed as a complement to the layer1 and layer2 boards. These sensors are not present on those boards so that they can be physicaly seprated and exposed to water. The MS5803-14BA can be directly exposed to water. A theroconductive materal should sepreate the TMP102 for the water. Both of these ICs communicate over I2C.
 
-The I2C address for the TMP102 is 0x48, this corrosponds to 1001000b. The I2C address of the MS5803-14BA is 0x76, this corrosponds to 1110110b.
+The I2C address for the TMP102 is 0x48 (0b1001000). The I2C address of the MS5803-14BA is 0x76 (0b1110110).
 
-The large white dots on the silkscreen directly next to the chips corosponds to a dot on the same location on the physical chip packages and assures that the chip is attached to the board in the proper orintation.
+The large white dots on the silkscreen directly next to the chips correspond to a dot on the same location on the physical chip packages, and assure that the chip is attached to the board in the proper orientation.
 
-No board orintation information is provided on the silksreen. This is because the senors do not relie on, or messure orintation. This board is also not to be rigidly attached to any board that does require orintation information. The sensors do however need to be exposed to the medium that data is being collected on.
+No board orientation information is provided on the silksreen. This is because the senors neither rely on nor messure orintation. This board is also not to be rigidly attached to any board that does require orintation information. The sensors do, however, need to be exposed to the medium in which the data are being collected.
 
-The board has two sides with componets on it. The layer one side in the eagle desgines contains the passive componets, the layer two side contains the sensors. These sides will be refered to as component side and sensor side respectivly. The two sided desgine was used to help protect the passive componets from mosture and leaks that could come from the hull breach nessary for the sensors. Addionaly the whole board can be used to help protect the rest of the electroncs form this hull breach.
+The board has two sides with components on them. The layer one side in the eagle designs contains the passive components, and the layer two side contains the sensors. These sides will be referred to as the component side and sensor side, respectively. The two sided design was used to help protect the passive components from moisture and leaks that could come from the hull breach necessary to put the sensors in the outside environment. Additionally, the whole board can be used to help protect the other electronics from this hull breach.
 
-The corners of the board were removed and replaced with diagonals to help placment inside round enclosures. The enclosure is not desgined at time of desgine so the removed corner option allows for the most flexiblity in diffrent enlsoure shapes. Once the actualy enclosure size and shape is know this board can be updated to reflect that.
+The corners of the board were removed and replaced with diagonals to help placement inside round enclosures. The enclosure has not yet been designed at time of writing, so the removed corner option allows for the most flexiblity in different enlsoure shapes. Once the actual enclosure size and shape is known, this board can be updated to reflect that.
 
-All traces on this board are 0.01" and the vias have 0.02" drill holes. This is more than sufficent to handle the current through the traces. Right angles in the trace are avoid to help ensure data intgrety.
+All traces on this board are 0.01" and the vias have 0.02" drill holes. This is more than sufficient to handle the current through the traces. Right angles in the trace are avoided to help ensure data intgrety.
 
-Ground pours are pressent on both sides of the board to ensure good grounding form all components.
+Ground pours are present on both sides of the board to ensure good grounding from all components.
 
-Decoupling capcitors have added as near to the chips as possible to minimze noise to the chips. This is detailed in the relavent data sheets.
+Decoupling capacitors have added as near to the chips as possible to minimze noise to the chips. This is detailed in the relevant data sheets.
 
-2.2k resistors were chossen as the I2C pull up resitors. This is slightly above the minimum needed value for the pressure sensor. 2.2k is however over double the minimum needed for the tempreture sensor (which is 1k). We belive that this will not be a problem but could lead to problems with timing or initation. After the board is assembled this document will be updated to recored if this is a problem.
+2.2k resistors were chosen as the I2C pull up resitors. This is slightly above the minimum needed value for the pressure sensor. 2.2k is, however, over double the minimum needed for the tempreture sensor (which is 1k). We believe that this will not likely be a problem, but it could lead to problems with timing or initation. After the board is assembled, this document will be updated to record if this is a problem.
 
-0805 package size are used for all passive compnets. This size was selected because I belive it so be a good compromise between size and ease of placment.
+0805 package size is used for all passive components. This size was selected because I believe it to be a good compromise between size and ease of placement.
