@@ -33,7 +33,10 @@ Decoupling capcitors have added as near to the chips as possible to minimze nois
 
 0805 package size are used for all passive compnets. This size was selected because I belive it so be a good compromise between size and ease of placment. However due to size constants the LED and the 22pF capacitor are smaller packages. (0603 and 0402 respectivly).
 
+During assembly solder past must be put on the pad under the 12mm coin cell slot. While no componet is attached to this pad the solder is needed to insure a good conectino between the battery and the board.
+
 On July 7 2016 six v1 boards were ordered from OSHpark for $14.10. This coropondes to $2.35 per board.
 
 Feture requests:
 add I2C pins for breakout to layer3 board
+put cut out for battery removal

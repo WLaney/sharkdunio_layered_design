@@ -23,4 +23,4 @@ Decoupling capcitors have added as near to the chips as possible to minimze nois
 
 0805 package size are used for all passive compnets. This size was selected because I belive it so be a good compromise between size and ease of placment.
 
-On July 7 2016 six v1 boards were ordered from OSHpark for $14.10. This coropondes to $2.35 per board.
+On July 7 2016 six v1 boards were ordered from OSHpark for $14.10. This coropondes to $2.35 per board. Board arvied, did not properly set up the silkscreen. Part names were included on the silk screen
