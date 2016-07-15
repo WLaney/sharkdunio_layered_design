@@ -1,43 +1,43 @@
-This board was desgined by William Laney as part of the College of William and Mary's physics REU programe, 2016. 
-Questions or concerns can be directed at William Laney at welaney@email.wm.edu
+This board was designed by William Laney as part of the College of William and Mary's physics REU program, 2016. 
+Questions or concerns can be directed to William Laney at welaney@email.wm.edu
 
-This is a breakout board for the DS3234 IC and the MCP7381 IC. The DS3234 is a real time clock (RTC) with battery backup. The MCP7381 is a power regulator for LiPo battery charging from USB. This board can be viewed as a shield for an 3.3V Arduino Pro Mini as it can stack ontop of the pro mini.
+This is a breakout board for the DS3234 IC and the MCP7381 IC. The DS3234 is a real time clock (RTC) with battery backup. The MCP7381 is a power regulator for LiPo battery charging from USB. This board can be viewed as a shield for an 3.3V Arduino Pro Mini as it can stack on top of the pro mini.
 
-In addition to the ICs listed above this board contains a female micro USB (uUSB) port, a 12mm coin cell slot, and a male JPL 2 prong connector. The male JPL 2 prong connector is to connect a LiPo battery to the board. The 12mm coin cell slot holds a CR1225 coin cell battery that acts as the battery backup for the DS3234. The female uUSB port is for charging the LiPo battery.
+In addition to the ICs listed above, this board contains a female micro USB (uUSB) port, a 12mm coin cell slot, and a male JPL 2 prong connector. The male JPL 2 prong connector connects the LiPo battery to the board. The 12mm coin cell slot holds a CR1225 coin cell battery that acts as the battery backup for the DS3234. The female uUSB port is for charging the LiPo battery.
 
-The DS3234 is connected through SPI. The chip select pin is 9. The square wave pin is 2. The coin cell slot is not connected to a pin, it is connected directly to the DS3234.
+The DS3234 is connected through SPI. The chip select pin is 9. The square wave pin is 2. The coin cell slot is not connected to a pin, but is connected directly to the DS3234.
 
-The male JPL 2 prong connector is conencted to the RAW pin.
+The male JPL 2 prong connector is connected to the RAW pin.
 
-The MCP7381 IC is not conencted to any pins, it connects the uUSB slot and the JPL 2 prong connector.
+The MCP7381 IC is not connected to any pins. It connects the uUSB slot and the JPL 2 prong connector.
 
-All traces relating to the LiPo battery and uUSB slot are 0.016". This is larger than the traces used on the layer 1 board and the DS3234. This increased taces size accomindates the larger currents that need to flow these connections and provides additonaly overhead in case of probles with the battery or the charging.
+All traces relating to the LiPo battery and uUSB slot are 0.016". This is larger than the traces used on the layer 1 board and the DS3234. This increased trace size accommodates the larger currents that need to flow through these connections, and provides additional overhead in case of probes with the battery or the charging.
 
-The traces related to the DS3234 are 0.01" and the vias have 0.02" drill holes. This is more than sufficent to handle the current through the traces. Right angles in the trace are avoid to help ensure data intgrety.
+The traces related to the DS3234 are 0.01" and the vias have 0.02" drill holes. This is more than sufficient to handle the current through the traces. Right angles in the trace are avoided to help ensure data integrity.
 
-The bottom and top layers of this board contain ground pours. The top gound pour is connected to the left hand Arduino Pro Mini ground, and the bottom pour is attached to right. These directions are from a top view of the board. The pours are connect in various areas through vias. This is espacily importatn because the bottom ground pour is seprated into two sides for majority of the board due to the RAW trace.
+The bottom and top layers of this board contain ground pours. The top ground pour is connected to the left hand Arduino Pro Mini ground, and the bottom pour is attached to right. These directions are from a top view of the board. The pours are connected in various areas through vias. This is especially important because the bottom ground pour is separated into two sides for the majority of the board due to the RAW trace.
 
-Most pins holes on the board are not connected and are there to provide stacking functionality with the Arduino Pro Mini. The only holes that are in use are the ones labled on the silk screen. Please note this means pins that are in use on either this board or the layer one board. 
+Most pins holes on the board are not connected, and are there to provide stacking functionality with the Arduino Pro Mini. The only holes that are in use are the ones labeled on the silk screen (that is, pins in use on either this board or the layer one board). 
 
-Data connections were not run underneth the DS3234 IC on the top layer as to not interfece with the osscilator. Additonaly a top layer ground pours prevents the bottom layer data connections from interfering.
+Data connections were not run underneath the DS3234 IC on the top layer so as to not interfere with the oscillator. Additionally, a top layer ground pour prevents the bottom layer data connections from interfering.
 
-A red LED is attached to the MCP7381 to act as a chargin indicator light. While the light is on the battery is charging.
+A red LED is attached to the MCP7381 to act as a charging indicator light. While the light is, on the battery is charging.
 
-Decoupling capcitors have added as near to the chips as possible to minimze noise to the chips. This is detailed in the relavent data sheets.
+Decoupling capacitors were added as near to the chips as possible to minimize noise to the chips. This is detailed in the relevant data sheets.
 
-The printed arrows on the silk screen corosponds directly to the orinitation of the accerometer. Please note that the accelometer, or any diorectonal sensor, are not on this board. Due to the stacking nature of the desgine it is imporatn to have the orintation information easly readable on every level.
+The printed arrows on the silk screen correspond directly to the orientation of the accelerometer. Please note that the accelerometer, or any directional sensor, are not on this board. Due to the stacking nature of the design, it is important that the orientation information be easily readable on every level.
 
-The white dot on the silk screen corosponds to a dot on the same location on the physical DS3234 chip and assures that the chip is attached to the board in the proper orintation. Outlines of the compontes serve this purpose for the coin cell slot, uUSB slot and the JPl connector.
+The white dot on the silk screen corresponds to a dot on the same location on the physical DS3234 chip and assures that the chip is attached to the board in the proper orientation. Outlines of the components serve this purpose for the coin cell slot, uUSB slot and the JPL connector.
 
-Decoupling capcitors have added as near to the chips as possible to minimze noise to the chips. This is detailed in the relavent data sheets.
+Decoupling capacitors been have added as near to the chips as possible to minimize noise to the chips. This is detailed in the relevant data sheets.
 
-0805 package size are used for all passive compnets. This size was selected because I belive it so be a good compromise between size and ease of placment. However due to size constants the LED and the 22pF capacitor are smaller packages. (0603 and 0402 respectivly).
+0805 package size is used for all passive components. This size was selected because I believe it to be a good compromise between size and ease of placement. However, due to size constraints, the LED and the 22pF capacitor are smaller packages. (0603 and 0402 respectively).
 
-During assembly solder past must be put on the pad under the 12mm coin cell slot. While no componet is attached to this pad the solder is needed to insure a good conectino between the battery and the board.
+During assembly, a solder pad must be put on the pad under the 12mm coin cell slot. While no component is attached to this pad, the solder is needed to ensure a good connection between the battery and the board.
 
-On July 7 2016 six v1 boards were ordered from OSHpark for $14.10. This coropondes to $2.35 per board.
+On July 7 2016, six v1 boards were ordered from OSHpark for $14.10. This corresponds to $2.35 per board.
 
-V2 change requests:
+Future requests:
 add I2C pins for breakout to layer3 board
 put cut out for battery removal
 spell sharkduino corrctly on bottom layer silk screen
