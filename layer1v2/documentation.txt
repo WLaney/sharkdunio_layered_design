@@ -1,26 +1,25 @@
-This board was desgined by William Laney as part of the College of William and Mary's physics REU programe, 2016. 
-Questions or concerns can be directed at William Laney at welaney@email.wm.edu
+This board was designed by William Laney as part of the College of William and Mary's physics REU program, 2016.  Questions or concerns can be directed at William Laney at welaney@email.wm.edu
 
-This is a breakout board for the MMA84520 IC (3-axis accelorometer), L3GD20H IC (3-axis gyroscope), and Transflash micro SD (uSD) reader. This board can be viewed as a shield for an 3.3V Arduino Pro Mini as it can stack ontop of the pro mini. Both the MMA84520 and L3GD20H communicate using I2C protoical. All non I2C funcunality of both of these chips is not enabled. This includes interups from the chips and the SPI functunality of the L3GD20H. 
+This is a breakout board for the MMA84520 IC (3-axis accelerometer), L3GD20H IC (3-axis gyroscope), and Transflash microSD (uSD) reader. This board can be viewed as a shield for an 3.3V Arduino Pro Mini, as it can stack on top of the Pro Mini. Both the MMA84520 and L3GD20H communicate using the I2C protocol, with the non-I2C functionality of both chips disabled. This includes interrupts from the chips and the SPI functionality of the L3GD20H. 
 
-The I2C address for the L3GD20H IC is 0X6B in hex, which corosbonds to 1101011b. The I2C address for the MMA84520 is 0X1C in hex, which corosbonds to 00011100b.
+The I2C address for the L3GD20H IC is 0x6B in hex (0b1101011 in binary). The I2C address for the MMA84520 is 0x1C in hex (00011100b).
 
 The uSD reader is connected through SPI. The chip select pin is 10.
 
-Most pins holes on the board are not connected and are there to provide stacking functionality with the Arduino Pro Mini. The only wholes that are in use are the ones labled on the silk screen. Please note this means pins that are in use on either this board or the layer two board. 
+Most pins holes on the board are not connected, and are there to provide stacking functionality with the Arduino Pro Mini. The only holes that are in use are the ones labeled on the silk screen (in other words, pins that are in use either on this board or the layer two board).
 
-The printed arrows on the silk screen corospones directly to the orinitation of the accerometer. The gyrscope is orinented as to corropond to these axis in the expected way.
+The printed arrows on the silk screen correspond directly to the orientation of the accelerometer. The gyroscope is oriented so as to correspond to these axis in the expected way (x to pitch, y to roll, z to yaw).
 
-The large white dots on the silkscreen directly next to the chips corosponds to a dot on the same location on the physical chip packages and assures that the chip is attached to the board in the proper orintation. The outline of the uSD reader on the silk screen is used for orintation of the uSD reader.
+The large white dots on the silkscreen directly next to the chips corresponds to a dot on the same location on the physical chip packages, and assure that the chip is attached to the board with the proper orientation. The outline of the uSD reader on the silk screen is used for the orientation of the uSD reader.
 
-All traces on this board are 0.01" and the vias have 0.02" drill holes. This is more than sufficent to handle the current through the traces. Right angles in the trace are avoid to help ensure data intgrety.
+All traces on this board are 0.01" and the vias have 0.02" drill holes. This is more than sufficient to handle the current through the traces. Right angles in the trace are avoided to help ensure data integrity.
 
-The bottom layer of this board contains a ground pour. There is not ground pour on the top layer of the board because there are to many leads to make a useful pour. The bottom layer ground pour is set to attach to both of the ground pins on the Arduino Pro Min.
+The bottom layer of this board contains a ground pour. There is not a ground pour on the top layer of the board because there are too many leads to make a useful pour. The bottom layer ground pour is set to attach to both of the ground pins on the Arduino Pro Mini.
 
-No vias were placed under the uSD reader to preven accedtial ground connections when the uSD card is inserted.
+No vias were placed under the uSD reader to prevent accidental ground connections when the uSD card is inserted.
 
-Decoupling capcitors have added as near to the chips as possible to minimze noise to the chips. This is detailed in the relavent data sheets.
+Decoupling capacitors have been added as near to the chips as possible to minimize noise to the chips. This is detailed in the relevant data sheets.
 
-0805 package size are used for all passive compnets. This size was selected because I belive it so be a good compromise between size and ease of placment.
+0805 package size is used for all passive components. This size was selected because I believe it to be a good compromise between size and ease of placement.
 
-On July 7 2016 six v1 boards were ordered from OSHpark for $14.10. This coropondes to $2.35 per board. Board arvied, did not properly set up the silkscreen. Part names were included on the silk screen
+On July 7 2016 six v1 boards were ordered from OSHpark for $14.10. This corresponds to $2.35 per board. Board arrived, did not properly set up the silkscreen. Part names were included on the silk screen
