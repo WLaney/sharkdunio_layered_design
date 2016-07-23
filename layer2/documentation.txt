@@ -42,3 +42,4 @@ add I2C pins for breakout to layer3 board
 put cut out for battery removal
 spell sharkduino corrctly on bottom layer silk screen
 add turn on switch
+ square/ aline components
