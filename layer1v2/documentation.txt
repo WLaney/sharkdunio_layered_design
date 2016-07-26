@@ -23,3 +23,11 @@ Decoupling capacitors have been added as near to the chips as possible to minimi
 0805 package size is used for all passive components. This size was selected because I believe it to be a good compromise between size and ease of placement.
 
 On July 7 2016 six v1 boards were ordered from OSHpark for $14.10. This corresponds to $2.35 per board. Board arrived, did not properly set up the silkscreen. Part names were included on the silk screen
+
+Future requests:
+spell sharkduino corrctly on bottom layer silk screen
+remove part labels form silk screen
+label the 4.7uF capacitor on silk screen
+move uSD holder back on board
+find more secure uSD holder
+switch sharkduino and William Laney on top layer silk screen?

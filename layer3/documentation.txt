@@ -22,3 +22,5 @@ Decoupling capacitors have added as near to the chips as possible to minimze noi
 2.2k resistors were chosen as the I2C pull up resitors. This is slightly above the minimum needed value for the pressure sensor. 2.2k is, however, over double the minimum needed for the tempreture sensor (which is 1k). We believe that this will not likely be a problem, but it could lead to problems with timing or initation. After the board is assembled, this document will be updated to record if this is a problem.
 
 0805 package size is used for all passive components. This size was selected because I believe it to be a good compromise between size and ease of placement.
+
+On July 13, 2016 three v1 board were ordered from OSHpark for $1.65. This corrosponds to $0.55 per board. 
