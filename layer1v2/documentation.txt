@@ -1,9 +1,13 @@
+Sharkduinov1 Layer 1
+======================
 This board was designed by William Laney as part of the College of William and Mary's physics REU program, 2016.  Questions or concerns can be directed at William Laney at welaney@email.wm.edu
 
 This is a breakout board for the MMA84520 IC (3-axis accelerometer), L3GD20H IC (3-axis gyroscope), and Transflash microSD (uSD) reader. This board can be viewed as a shield for an 3.3V Arduino Pro Mini, as it can stack on top of the Pro Mini. Both the MMA84520 and L3GD20H communicate using the I2C protocol, with the non-I2C functionality of both chips disabled. This includes interrupts from the chips and the SPI functionality of the L3GD20H. 
 
 The I2C address for the L3GD20H IC is 0x6B in hex (0b1101011 in binary). The I2C address for the MMA84520 is 0x1C in hex (00011100b).
 
+Desgine Inofrmation
+--------------------
 The uSD reader is connected through SPI. The chip select pin is 10.
 
 Most pins holes on the board are not connected, and are there to provide stacking functionality with the Arduino Pro Mini. The only holes that are in use are the ones labeled on the silk screen (in other words, pins that are in use either on this board or the layer two board).
@@ -24,10 +28,32 @@ Decoupling capacitors have been added as near to the chips as possible to minimi
 
 On July 7 2016 six v1 boards were ordered from OSHpark for $14.10. This corresponds to $2.35 per board. Board arrived, did not properly set up the silkscreen. Part names were included on the silk screen
 
-Future requests:
+Assembily Information
+-------------------------
+Assemblie steps:
+(please note that these steps represent what I beilive to be the optimal order of operations. They may not be. Addionaly not all boards were assembled in this way as I expermented with the order)
+1) Applie Solder paste for ICs
+2) Place ICs
+3) Applie Solder paste for passive commponents
+4) Place passice components
+5) Applie Solder paste for uSD reader
+6) Placed uSD reader
+7) Placed full board into solder reflow oven
+8) Wipe down with isopropal alchohal
+9) check if the board is shorted
+
+When appling solder paste for uSD reader be sure not to put to much paste. It is easy for the paste to be pushed out and connect pads when the uSD reader is pushed into place.
+
+Also be sure to make sure that not solder paset is connecting the pads of the ICs and that the ICs are placed in the correct orentation using the small dots. 
+
+
+Feature Requests/ Improvents
+----------------------------
 spell sharkduino corrctly on bottom layer silk screen
 remove part labels form silk screen
 label the 4.7uF capacitor on silk screen
 move uSD holder back on board
 find more secure uSD holder
+label all pin holes on back silk screen
 switch sharkduino and William Laney on top layer silk screen?
+put top gournd pour

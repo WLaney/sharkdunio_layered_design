@@ -1,3 +1,5 @@
+Sharkduinov1 Layer 1
+======================
 This board was designed by William Laney as part of the College of William and Mary's physics REU program, 2016. 
 Questions or concerns can be directed to William Laney at welaney@email.wm.edu
 
@@ -5,6 +7,8 @@ This is a breakout board for the DS3234 IC and the MCP7381 IC. The DS3234 is a r
 
 In addition to the ICs listed above, this board contains a female micro USB (uUSB) port, a 12mm coin cell slot, and a male JPL 2 prong connector. The male JPL 2 prong connector connects the LiPo battery to the board. The 12mm coin cell slot holds a CR1225 coin cell battery that acts as the battery backup for the DS3234. The female uUSB port is for charging the LiPo battery.
 
+Desgine Inofrmation
+--------------------
 The DS3234 is connected through SPI. The chip select pin is 9. The square wave pin is 2. The coin cell slot is not connected to a pin, but is connected directly to the DS3234.
 
 The male JPL 2 prong connector is connected to the RAW pin.
@@ -33,14 +37,47 @@ Decoupling capacitors been have added as near to the chips as possible to minimi
 
 0805 package size is used for all passive components. This size was selected because I believe it to be a good compromise between size and ease of placement. However, due to size constraints, the LED and the 22pF capacitor are smaller packages. (0603 and 0402 respectively).
 
-During assembly, a solder pad must be put on the pad under the 12mm coin cell slot. While no component is attached to this pad, the solder is needed to ensure a good connection between the battery and the board.
-
 On July 7 2016, six v1 boards were ordered from OSHpark for $14.10. This corresponds to $2.35 per board.
 
-Future requests:
+Assembily Information
+-------------------------
+Assemblie steps:
+(please note that these steps represent what I beilive to be the optimal order of operations. They may not be. Addionaly not all boards were assembled in this way as I expermented with the order)
+1) Applie solder paste for DS3234
+2) Place DS3234
+3) Applie solder paste for 0402 size 22pF capcitor
+4) Place 0402 size 22pF capcitor
+5) Applie solder paste for MCP7381 IC, 0805 4.7uF capcitor adjacent to MCP7381, and LED
+6) Place MCP7381 IC, 0805 4.7uF capcitor adjacent to MCP7381, and LED
+7) Applie solder paste for all remaing passive components
+8) Place all remaing passive components
+9) Applie solder paste for 12mm coin cell slot
+10) Place 12mm coin cell slot
+11) Applie solder past for uUSB female connector
+12) Place uUSB female connector
+13) Placed full board into solder reflow oven
+14) Wipe down with isopropal alchohal
+15) Applie hot glue around uUSB female connector
+16) Solder on JPL 2 prong connectro with soldering iron
+17) check if the board is shorted between GND and VCC
+18) check if the board is shorted between GND and RAW
+
+Be sure the DS3234 chip is in the correct orentation. The notch on the chip corroponds to the white dot on the board.
+
+Be sure to use a good amount of solder paste for the 0402 22pF capacitor so it stays in place during relfow. It has flipped up to be perpendicular to the board in relfow
+
+Be sure the LED is placed in the correct orientation, it is a polarized component.
+
+Solder paste must be put on the pad under the 12mm coin cell slot. While no component is attached to this pad, the solder is needed to ensure a good connection between the battery and the board.
+
+When appling the uUSB connector be carful, it is very easy so slide out of alginment. Addionaly do not try to use it until it is hot glued into place. The solder does not firmly attach the connector to the board.
+
+Feature Requests/ Improvents
+----------------------------
 add I2C pins for breakout to layer3 board
-put cut out for battery removal
+put cut out for coin cell battery removal
 spell sharkduino corrctly on bottom layer silk screen
 add turn on switch
 square/ aline components
-remove pin hole next to batt
+remove pin hole next to batt (pin 4)
+rexeaine charging circuity to insure that the LED indicator light is correct

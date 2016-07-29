@@ -1,3 +1,5 @@
+Sharkduinov1 Layer 1
+======================
 This board was desgined by William Laney as part of the College of William and Mary's 2016 physics REU program. 
 Questions or concerns can be directed to William Laney at welaney@email.wm.edu
 
@@ -5,6 +7,8 @@ This is a breakout board for the TMP102 tempreture sensor and the MS5803-14BA pr
 
 The I2C address for the TMP102 is 0x48 (0b1001000). The I2C address of the MS5803-14BA is 0x76 (0b1110110).
 
+Desgine Inofrmation
+--------------------
 The large white dots on the silkscreen directly next to the chips correspond to a dot on the same location on the physical chip packages, and assure that the chip is attached to the board in the proper orientation.
 
 No board orientation information is provided on the silksreen. This is because the senors neither rely on nor messure orintation. This board is also not to be rigidly attached to any board that does require orintation information. The sensors do, however, need to be exposed to the medium in which the data are being collected.
@@ -19,8 +23,30 @@ Ground pours are present on both sides of the board to ensure good grounding fro
 
 Decoupling capacitors have added as near to the chips as possible to minimze noise to the chips. This is detailed in the relevant data sheets.
 
-2.2k resistors were chosen as the I2C pull up resitors. This is slightly above the minimum needed value for the pressure sensor. 2.2k is, however, over double the minimum needed for the tempreture sensor (which is 1k). We believe that this will not likely be a problem, but it could lead to problems with timing or initation. After the board is assembled, this document will be updated to record if this is a problem.
+2.2k resistors were chosen as the I2C pull up resitors. This is slightly above the minimum needed value for the pressure sensor. 2.2k is, however, over double the minimum needed for the tempreture sensor (which is 1k). We believe that this will not likely be a problem, but it could lead to problems with timing or initation. After the board is assembled, this document will be updated to record if this is a problem. 
+UPDATE: the larger then need restor does not appear to be a problem
 
 0805 package size is used for all passive components. This size was selected because I believe it to be a good compromise between size and ease of placement.
 
 On July 13, 2016 three v1 board were ordered from OSHpark for $1.65. This corrosponds to $0.55 per board. 
+
+Assembily Information
+-------------------------
+Assemblie steps:
+(please note that these steps represent what I beilive to be the optimal order of operations. They may not be. Addionaly not all boards were assembled in this way as I expermented with the order)
+1) Applie solder paste for all passive componets
+2) Place passive components
+3) Place board into solder reflow oven
+4) wipe down soldered side with isopropal alchohal
+5) wait for oven to fully cool
+6) applie solder paste for ICs 
+7) Place ICs
+8) Place board into solder reflow oven IC side up
+9) wipe down with isopropal alchohal
+10) check if the board is shorted
+
+Before appling the ICs carfuly inspect the soldered passive componts. If anything looks bad start over. The MS5803-14BA is expsive and steps should be taken to not waste them.
+
+Feature Requests/ Improvents
+----------------------------
+test if the TMP102 is needed. The tempreture sensor in the MS5803-14BA may be sufficent or even superior.
