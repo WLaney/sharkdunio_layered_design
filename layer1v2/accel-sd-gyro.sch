@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -2654,19 +2654,16 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
 <wire x1="127" y1="12.7" x2="134.62" y2="12.7" width="0.1524" layer="91"/>
-<label x="127" y="12.7" size="1.778" layer="95"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="12.7" x2="142.24" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="12.7" x2="137.16" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="10.16" x2="134.62" y2="12.7" width="0.1524" layer="91"/>
 <junction x="134.62" y="12.7"/>
+<label x="137.16" y="12.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
-<junction x="175.26" y="81.28"/>
+<wire x1="139.7" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
 <label x="142.24" y="81.28" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="SDA/SDI/SDO"/>
-<wire x1="175.26" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SA0" class="0">
@@ -2852,6 +2849,11 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <label x="142.24" y="76.2" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="CS"/>
 <pinref part="R4" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<wire x1="154.94" y1="81.28" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
