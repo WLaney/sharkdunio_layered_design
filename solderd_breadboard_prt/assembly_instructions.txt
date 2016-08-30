@@ -1,0 +1,17 @@
+Soldered Breadboard Assembly Instructions
+=====================
+
+(please note that these steps represent what I beilive to be the optimal order of operations. They may not be. Addionaly not all boards were assembled in this way as I expermented with the order)
+
+1) Cut perfreated breadboard to the correct size
+2) Solder Headers onto the breadboard
+3) Solder wires that run on the top of the board. Start with VCC and GND conections as these are the longest
+4) Creat nessary solder briges on the bottom
+5) Solder in wires on the bottom
+6) Insure that all nessary points are connected
+7) Add extra support headers for the uSD, accel, and gyro
+8) Solder I2C wires to the arduino
+9) Place batt into RTC
+10) Solder arduino, uSD holder, and RTC onto the board
+11) Solder I2C wire into bread board
+12) Solder on accel and gyro
