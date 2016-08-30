@@ -1,4 +1,4 @@
-Sharkduinov1 Layer 1
+Sharkduinov1 Layer 3
 ======================
 This board was desgined by William Laney as part of the College of William and Mary's 2016 physics REU program. 
 Questions or concerns can be directed to William Laney at welaney@email.wm.edu

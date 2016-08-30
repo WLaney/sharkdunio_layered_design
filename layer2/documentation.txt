@@ -1,4 +1,4 @@
-Sharkduinov1 Layer 1
+Sharkduinov1 Layer 2
 ======================
 This board was designed by William Laney as part of the College of William and Mary's physics REU program, 2016. 
 Questions or concerns can be directed to William Laney at welaney@email.wm.edu
@@ -81,3 +81,15 @@ add turn on switch
 square/ aline components
 remove pin hole next to batt (pin 4)
 rexeaine charging circuity to insure that the LED indicator light is correct
+
+V1.1 Changes
+=================
+Spelled sharkduino correctly
+Removed pin 4
+moved batt up board
+
+
+V1.1 notes
+--------------
+I2C pins do not fit b/c of clock chip
+Will not pu battery cut out to minimze corners
