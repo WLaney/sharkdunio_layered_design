@@ -57,3 +57,9 @@ find more secure uSD holder
 label all pin holes on back silk screen
 switch sharkduino and William Laney on top layer silk screen?
 put top gournd pour
+
+V1.1 Changes
+================
+spell sharkduino correctly
+extened board to hold uSD
+Added top Ground pour
