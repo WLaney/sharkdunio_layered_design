@@ -24,7 +24,7 @@ Ground pours are present on both sides of the board to ensure good grounding fro
 Decoupling capacitors have added as near to the chips as possible to minimze noise to the chips. This is detailed in the relevant data sheets.
 
 2.2k resistors were chosen as the I2C pull up resitors. This is slightly above the minimum needed value for the pressure sensor. 2.2k is, however, over double the minimum needed for the tempreture sensor (which is 1k). We believe that this will not likely be a problem, but it could lead to problems with timing or initation. After the board is assembled, this document will be updated to record if this is a problem. 
-UPDATE: the larger then need restor does not appear to be a problem
+UPDATE: the larger then need resistor does not appear to be a problem
 
 0805 package size is used for all passive components. This size was selected because I believe it to be a good compromise between size and ease of placement.
 
