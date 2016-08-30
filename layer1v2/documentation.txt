@@ -10,7 +10,7 @@ Desgine Inofrmation
 --------------------
 The uSD reader is connected through SPI. The chip select pin is 10.
 
-Most pins holes on the board are not connected, and are there to provide stacking functionality with the Arduino Pro Mini. The only holes that are in use are the ones labeled on the silk screen (in other words, pins that are in use either on this board or the layer two board).
+Most pins holes on the board are not connected, and are there to provide stacking functionality with the Arduino Pro Mini. The only holes that are in use are the ones labeled on the TOP silk screen (in other words, pins that are in use either on this board or the layer two board).
 
 The printed arrows on the silk screen correspond directly to the orientation of the accelerometer. The gyroscope is oriented so as to correspond to these axis in the expected way (x to pitch, y to roll, z to yaw).
 
@@ -63,3 +63,7 @@ V1.1 Changes
 spell sharkduino correctly
 extened board to hold uSD
 Added top Ground pour
+moved name and sharkduino name
+labled 4.7uF capacitor
+remove part lables (smashed componets deleted names)
+added numbers for unused pins to bottom silk screen to aid assembly
