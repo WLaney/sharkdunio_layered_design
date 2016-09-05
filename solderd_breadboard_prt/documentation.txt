@@ -1,0 +1,15 @@
+Sharkduino Prototype
+=====================
+This device was designed by William Laney as part of the College of William and Mary's physics REU program, 2016.  Questions or concerns can be directed at William Laney at welaney@email.wm.edu
+
+This device uses an Arduino Pro Mini 3.3V, 8Hz. The Sparkfun breakout board for the MMA84520 IC (3-axis accelerometer), part number: SEN-12756. The Sparkfun breakout Transflash microSD, part number BOB-00544. The Sparkfun breakout board for the DS3234 IC (Real Time Clock), part number BOB-10160. The Sparkfun uUSB LiPo charger, part number PRT-10217. Finally the prototypes have a L3GD20H IC (3-axis gyroscope) on either the Adafruit breakout board (part number 1032) or use a custom made breakout board. Details for this board are laid in the gyroscope directory. 
+
+The accelerometer and gyroscope are I2C devices. The real time clock and uSD reader are SPI devices. The I2C address for the L3GD20H IC is 0x6B in hex (0b1101011 in binary). The I2C address for the MMA84520 is 0x1C in hex (00011100b). The SPI chip select for the uSD reader is pin 10. The SPI chip select for the real time clock is 9.
+
+The boards are layed out on a snappable prototype board from Sparkfun (part number PRT-13268). The are connected using 22AWG wire and solder bridges. For desgine and assembly information please see relavent files in this directory.
+
+Extra headers were added to the board to provdie additonaly suport to the break out boards.
+
+The Y direction is orinented along the length of the devivce.
+
+These desgines have been used 3 times. Once with the Adafruit gyrscope, and twice with the custom made gyroscope. The wires were run differently each time in order to find an optimal layout and the most convient orentation.
