@@ -47,7 +47,7 @@ Assemblie steps:
 2) Place DS3234
 3) Applie solder paste for 0402 size 22pF capcitor
 4) Place 0402 size 22pF capcitor
-5) Applie solder paste for MCP7381 IC, 0805 4.7uF capcitor adjacent to MCP7381, and LED
+5) Applie solder paste for MCP7381 IC, 0805 4.7uF capcitor adjacent to MCP7381, and LED. The postive side of the LED should face away from the MCP7381 IC
 6) Place MCP7381 IC, 0805 4.7uF capcitor adjacent to MCP7381, and LED
 7) Applie solder paste for all remaing passive components
 8) Place all remaing passive components
@@ -87,9 +87,9 @@ V1.1 Changes
 Spelled sharkduino correctly
 Removed pin 4
 moved batt up board
-
+The LED chargin circuit appears to be correct. The LED was installed backward
 
 V1.1 notes
 --------------
 I2C pins do not fit b/c of clock chip
-Will not pu battery cut out to minimze corners
+Will not put battery cut out to minimze corners
