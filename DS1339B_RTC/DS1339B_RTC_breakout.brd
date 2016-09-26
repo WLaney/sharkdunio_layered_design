@@ -6,15 +6,15 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -151,15 +151,14 @@
 <text x="16.891" y="2.921" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">10k</text>
 <text x="12.319" y="11.049" size="0.8128" layer="21" font="vector" ratio="15">0.1uF</text>
 <text x="17.399" y="0.508" size="1.016" layer="21" font="vector" ratio="15">VCC</text>
-<text x="20.066" y="2.413" size="1.016" layer="21" font="vector" ratio="15" rot="R90">SDA</text>
+<text x="19.939" y="2.413" size="1.016" layer="21" font="vector" ratio="15" rot="R90">SDA</text>
 <text x="19.939" y="5.334" size="1.016" layer="21" font="vector" ratio="15" rot="R90">SCL</text>
 <text x="19.939" y="8.128" size="1.016" layer="21" font="vector" ratio="15" rot="R90">SQW</text>
 <text x="19.939" y="12.319" size="1.016" layer="21" font="vector" ratio="15" rot="R90">GND</text>
-<text x="19.939" y="13.335" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">GND</text>
-<text x="19.939" y="8.509" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">SQW</text>
+<text x="19.939" y="13.208" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">GND</text>
+<text x="19.939" y="8.382" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">SQW</text>
 <text x="19.939" y="3.302" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">SDA</text>
-<text x="19.939" y="0.635" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">VCC</text>
-<text x="19.939" y="7.62" size="1.016" layer="22" font="vector" ratio="15" rot="MR270">SCL</text>
+<text x="19.939" y="0.889" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">VCC</text>
 <text x="10.16" y="4.572" size="0.8128" layer="21" font="vector" ratio="15">DS1339B</text>
 <text x="3.302" y="4.572" size="0.8128" layer="21" font="vector" ratio="15">ABS25</text>
 <text x="0.635" y="10.922" size="1.016" layer="21" font="vector" ratio="15">WM Physics</text>
