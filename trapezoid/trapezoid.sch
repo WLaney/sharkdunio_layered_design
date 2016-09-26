@@ -3815,14 +3815,14 @@ Note that this componet should be physicaly identical to all DS1339x RTCs
 <label x="137.16" y="22.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="91.44" x2="185.42" y2="91.44" width="0.1524" layer="91"/>
-<label x="142.24" y="91.44" size="1.778" layer="95"/>
-<pinref part="IC2" gate="G$1" pin="SDA/SDI/SDO"/>
-</segment>
-<segment>
 <pinref part="U$3" gate="G$1" pin="SDA"/>
 <wire x1="111.76" y1="121.92" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
 <label x="121.92" y="121.92" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="SDA/SDI/SDO"/>
+<wire x1="139.7" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
+<label x="162.56" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SA0" class="0">
@@ -4022,11 +4022,6 @@ Note that this componet should be physicaly identical to all DS1339x RTCs
 <label x="142.24" y="86.36" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="CS"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<wire x1="154.94" y1="91.44" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
