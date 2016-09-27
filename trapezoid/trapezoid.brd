@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -979,6 +979,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="0.15" y="-0.1"/>
 <vertex x="0.15" y="-0.15"/>
 </polygon>
+<via x="3.81" y="3.81" extent="1-16" drill="0.508"/>
+<via x="20.32" y="25.4" extent="1-16" drill="0.508"/>
 </signal>
 <signal name="SCL">
 <contactref element="U1" pad="4"/>
@@ -1151,7 +1153,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="52.52" y1="10.75" x2="52.02" y2="10.75" width="0.254" layer="1"/>
 <wire x1="52.52" y1="10.75" x2="52.52" y2="11.43" width="0.254" layer="1"/>
 <wire x1="53.155" y1="12.065" x2="55.38" y2="12.065" width="0.254" layer="1"/>
-<wire x1="57.6" y1="7.61" x2="61.94" y2="3.27" width="0.254" layer="1"/>
 <wire x1="55.38" y1="12.065" x2="56.015" y2="12.7" width="0.254" layer="1"/>
 <wire x1="49.345" y1="6.035" x2="49.345" y2="5.715" width="0.254" layer="1"/>
 <wire x1="51.57" y1="13.335" x2="46.49" y2="13.335" width="0.254" layer="1"/>
@@ -1164,7 +1165,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="46.17" y1="10.16" x2="46.17" y2="6.985" width="0.254" layer="1"/>
 <wire x1="45.22" y1="12.065" x2="45.22" y2="14.605" width="0.254" layer="1"/>
 <wire x1="57.6" y1="8.509" x2="57.6" y2="8.255" width="0.254" layer="1"/>
-<wire x1="57.6" y1="7.61" x2="57.6" y2="8.509" width="0.254" layer="1"/>
 <wire x1="67.125" y1="9.21" x2="65.22" y2="9.21" width="0.254" layer="1"/>
 <wire x1="55.94" y1="23.51" x2="56.66" y2="23.51" width="0.254" layer="1"/>
 <wire x1="56.66" y1="23.51" x2="57.6" y2="24.45" width="0.254" layer="1"/>
@@ -1172,8 +1172,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="60.14" y="25.4" extent="1-16" drill="0.508"/>
 <wire x1="60.14" y1="25.4" x2="60.14" y2="24.765" width="0.254" layer="16"/>
 <wire x1="60.14" y1="24.765" x2="55.06" y2="19.685" width="0.254" layer="16"/>
-<wire x1="55.06" y1="19.685" x2="55.06" y2="10.15" width="0.254" layer="16"/>
-<wire x1="55.06" y1="10.15" x2="61.94" y2="3.27" width="0.254" layer="16"/>
+<wire x1="55.06" y1="19.685" x2="55.06" y2="7.805" width="0.254" layer="16"/>
 <wire x1="59.505" y1="23.175" x2="59.505" y2="24.765" width="0.254" layer="1"/>
 <wire x1="59.505" y1="24.765" x2="60.14" y2="25.4" width="0.254" layer="1"/>
 <wire x1="57.6" y1="24.45" x2="59.19" y2="24.45" width="0.254" layer="1"/>
@@ -1199,6 +1198,16 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="49.345" y1="5.715" x2="50.615" y2="5.715" width="0.254" layer="1"/>
 <wire x1="50.615" y1="5.715" x2="51.25" y2="5.08" width="0.254" layer="1"/>
 <wire x1="51.25" y1="5.08" x2="51.25" y2="1.27" width="0.254" layer="1"/>
+<wire x1="61.94" y1="3.27" x2="61.5" y2="3.27" width="0.254" layer="1"/>
+<wire x1="61.5" y1="3.27" x2="59.69" y2="5.08" width="0.254" layer="1"/>
+<wire x1="59.69" y1="5.08" x2="58.42" y2="5.08" width="0.254" layer="1"/>
+<wire x1="58.42" y1="5.08" x2="57.15" y2="6.35" width="0.254" layer="1"/>
+<wire x1="57.15" y1="6.35" x2="57.15" y2="8.059" width="0.254" layer="1"/>
+<wire x1="57.15" y1="8.059" x2="57.6" y2="8.509" width="0.254" layer="1"/>
+<wire x1="61.94" y1="3.27" x2="61.5" y2="3.27" width="0.254" layer="16"/>
+<wire x1="61.5" y1="3.27" x2="59.69" y2="5.08" width="0.254" layer="16"/>
+<wire x1="55.06" y1="7.805" x2="57.785" y2="5.08" width="0.254" layer="16"/>
+<wire x1="57.785" y1="5.08" x2="59.69" y2="5.08" width="0.254" layer="16"/>
 </signal>
 <signal name="CS_3.3V">
 <contactref element="IC2" pad="5"/>
