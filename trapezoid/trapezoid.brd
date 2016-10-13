@@ -1031,11 +1031,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="39.3192" y1="8.89" x2="41.2242" y2="6.985" width="0.254" layer="16"/>
 <wire x1="33.515" y1="11.93" x2="30.615" y2="11.93" width="0.254" layer="1"/>
 <wire x1="30.615" y1="11.93" x2="30.48" y2="12.065" width="0.254" layer="1"/>
-<wire x1="43.18" y1="12.7" x2="43.18" y2="14.605" width="0.254" layer="1"/>
 <wire x1="36.21" y1="22.845" x2="36.83" y2="22.225" width="0.254" layer="1"/>
 <wire x1="36.83" y1="22.225" x2="36.83" y2="17.145" width="0.254" layer="1"/>
 <wire x1="36.83" y1="17.145" x2="38.1" y2="15.875" width="0.254" layer="1"/>
-<wire x1="43.18" y1="12.7" x2="43.175" y2="12.705" width="0" layer="19" extent="1-1"/>
+<wire x1="43.13" y1="12.705" x2="43.13" y2="14.555" width="0.254" layer="1"/>
+<wire x1="43.13" y1="14.555" x2="43.18" y2="14.605" width="0.254" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="U1" pad="6"/>
