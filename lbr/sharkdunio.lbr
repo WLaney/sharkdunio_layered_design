@@ -198,11 +198,39 @@ Note that this componet should be physicaly identical to all DS1339x RTCs
 </devices>
 </deviceset>
 <deviceset name="FXAS21002">
+<description>FXAS21002
+I2C/SPI low power gyro</description>
 <gates>
 <gate name="G$1" symbol="FXAS21002C" x="5.08" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="24QFN">
+<connects>
+<connect gate="G$1" pin="GND1" pad="1"/>
+<connect gate="G$1" pin="GND2" pad="5"/>
+<connect gate="G$1" pin="GND3" pad="14"/>
+<connect gate="G$1" pin="GND4" pad="19"/>
+<connect gate="G$1" pin="I2C_B/SPI" pad="8"/>
+<connect gate="G$1" pin="INT1" pad="3"/>
+<connect gate="G$1" pin="INT2" pad="2"/>
+<connect gate="G$1" pin="RST_B" pad="4"/>
+<connect gate="G$1" pin="RSVD_GND@1" pad="6"/>
+<connect gate="G$1" pin="RSVD_GND@2" pad="7"/>
+<connect gate="G$1" pin="RSVD_GND@3" pad="9"/>
+<connect gate="G$1" pin="RSVD_GND@4" pad="10"/>
+<connect gate="G$1" pin="RSVD_GND@5" pad="20"/>
+<connect gate="G$1" pin="RSVD_GND@6" pad="21"/>
+<connect gate="G$1" pin="RSVD_GND@7" pad="22"/>
+<connect gate="G$1" pin="RSVD_GND@8" pad="23"/>
+<connect gate="G$1" pin="RSVD_GND@9" pad="24"/>
+<connect gate="G$1" pin="SA0/MISO" pad="13"/>
+<connect gate="G$1" pin="SCL/SCLK" pad="11"/>
+<connect gate="G$1" pin="SDA/MOSI/SPI_DATA" pad="12"/>
+<connect gate="G$1" pin="SPI_CS_B" pad="17"/>
+<connect gate="G$1" pin="VDD" pad="15"/>
+<connect gate="G$1" pin="VDDIO" pad="18"/>
+<connect gate="G$1" pin="VREGD" pad="16"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
