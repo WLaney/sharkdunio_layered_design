@@ -201,7 +201,7 @@ Note that this componet should be physicaly identical to all DS1339x RTCs
 <text x="-22.86" y="31.115" size="1.778" layer="95">&gt;NAME</text>
 <text x="-22.86" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="AMPHENOL_MICROSD">
+<symbol name="10PIN_MICROSD">
 <wire x1="-5.08" y1="-15.24" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
 <wire x1="7.62" y1="15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
@@ -287,7 +287,7 @@ I2C/SPI low power gyro</description>
 <deviceset name="AMPHENOL_MICROSD">
 <description>Amphenol 114-00841-68 microSD slot</description>
 <gates>
-<gate name="G$1" symbol="AMPHENOL_MICROSD" x="0" y="0"/>
+<gate name="G$1" symbol="10PIN_MICROSD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="AMPHENOL_MICROSD">
