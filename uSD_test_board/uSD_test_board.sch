@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1473,126 +1473,38 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="CS1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="CS"/>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="91.44" x2="25.4" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="DI1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="DI"/>
 <wire x1="25.4" y1="88.9" x2="17.78" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="3"/>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
-<wire x1="25.4" y1="86.36" x2="17.78" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
+<net name="SCK1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="4"/>
 <pinref part="U$1" gate="G$1" pin="SCK"/>
 <wire x1="25.4" y1="83.82" x2="17.78" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="5"/>
 <wire x1="17.78" y1="81.28" x2="25.4" y2="81.28" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="6"/>
-<pinref part="U$1" gate="G$1" pin="DO"/>
-<wire x1="25.4" y1="78.74" x2="17.78" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="1"/>
-<pinref part="U$2" gate="G$1" pin="CS"/>
-<wire x1="73.66" y1="91.44" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="2"/>
-<pinref part="U$2" gate="G$1" pin="DI"/>
-<wire x1="73.66" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="VCC"/>
-<pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="66.04" y1="86.36" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="4"/>
-<pinref part="U$2" gate="G$1" pin="SCK"/>
-<wire x1="73.66" y1="83.82" x2="66.04" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
 <pinref part="J2" gate="G$1" pin="5"/>
 <wire x1="66.04" y1="81.28" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="6"/>
-<pinref part="U$2" gate="G$1" pin="DO"/>
-<wire x1="73.66" y1="78.74" x2="66.04" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="1"/>
-<pinref part="U$3" gate="G$1" pin="CS"/>
-<wire x1="127" y1="104.14" x2="119.38" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="2"/>
-<pinref part="U$3" gate="G$1" pin="DI"/>
-<wire x1="127" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="3"/>
-<pinref part="U$3" gate="G$1" pin="VCC"/>
-<wire x1="127" y1="99.06" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="4"/>
-<pinref part="U$3" gate="G$1" pin="SCK"/>
-<wire x1="127" y1="96.52" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="6"/>
-<pinref part="U$3" gate="G$1" pin="DO"/>
-<wire x1="127" y1="91.44" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="SUPPORT@4"/>
 <wire x1="119.38" y1="68.58" x2="124.46" y2="68.58" width="0.1524" layer="91"/>
@@ -1614,6 +1526,90 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="124.46" y1="76.2" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
 <junction x="124.46" y="76.2"/>
 <junction x="124.46" y="93.98"/>
+</segment>
+</net>
+<net name="DO1" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="6"/>
+<pinref part="U$1" gate="G$1" pin="DO"/>
+<wire x1="25.4" y1="78.74" x2="17.78" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CS2" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="U$2" gate="G$1" pin="CS"/>
+<wire x1="73.66" y1="91.44" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DI2" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="U$2" gate="G$1" pin="DI"/>
+<wire x1="73.66" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SCK2" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="4"/>
+<pinref part="U$2" gate="G$1" pin="SCK"/>
+<wire x1="73.66" y1="83.82" x2="66.04" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DO2" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="6"/>
+<pinref part="U$2" gate="G$1" pin="DO"/>
+<wire x1="73.66" y1="78.74" x2="66.04" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CS3" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="U$3" gate="G$1" pin="CS"/>
+<wire x1="127" y1="104.14" x2="119.38" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DI3" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="2"/>
+<pinref part="U$3" gate="G$1" pin="DI"/>
+<wire x1="127" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SCK3" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="4"/>
+<pinref part="U$3" gate="G$1" pin="SCK"/>
+<wire x1="127" y1="96.52" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DO3" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="6"/>
+<pinref part="U$3" gate="G$1" pin="DO"/>
+<wire x1="127" y1="91.44" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="17.78" y1="86.36" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC2" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="VCC"/>
+<pinref part="J2" gate="G$1" pin="3"/>
+<wire x1="66.04" y1="86.36" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC3" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="VCC"/>
+<pinref part="J3" gate="G$1" pin="3"/>
+<wire x1="119.38" y1="99.06" x2="127" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
