@@ -388,6 +388,31 @@ I2C/SPI low power gyro</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="HIROSE_MICROSD">
+<description>Hirose DM3D-SF uSD slot</description>
+<gates>
+<gate name="G$1" symbol="10PIN_MICROSD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AMPHENOL_MICROSD">
+<connects>
+<connect gate="G$1" pin="CD1" pad="9"/>
+<connect gate="G$1" pin="CD2" pad="10"/>
+<connect gate="G$1" pin="CS" pad="2"/>
+<connect gate="G$1" pin="DI" pad="3"/>
+<connect gate="G$1" pin="DO" pad="7"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="NC" pad="1"/>
+<connect gate="G$1" pin="RSV" pad="8"/>
+<connect gate="G$1" pin="SCK" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
