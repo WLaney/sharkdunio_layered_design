@@ -1,0 +1,5 @@
+component/value, size, quanity, digikey part number
+--------------------------------------------------------
+Molex 8+2 microSD slot, NA, 1, WM6357CT-ND
+Amphenol 8+2 microSD slot, NA, 114-00841-68-1-ND
+Hirose 8+2 microSD slot, NA, HR1941CT-ND
