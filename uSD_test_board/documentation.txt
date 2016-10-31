@@ -1,0 +1,13 @@
+# microSD Test Board
+
+This board was designed by William Laney as part of Junior level independent research. Questions or concerns can be directed to William Laney at welaney@email.wm.edu
+
+This is a breakout board for 3 diffrent microSD card slots. The slots are the Molex SD-104031-001, Amphenol 114-00841-68, and the Hirose DM3D-SF. The purpose of this board is to test the part desgines of these slots, and to determine the slot that holds the uSD cards with the tightest fit.
+
+## Desgine Information
+
+The uSD slots connect throught SPI. Each of the slots has spereate SPI and powerlines. This means each slot can be used completly indepntly of each other.
+
+ Each slot has a bottom and top ground pour suronding it, however these ground pours are not connected. There is no copper between the each of the uSD slots. This allows for easy seperation of the slots.
+
+On October 28, 2016 three boards were ordered form OSHpark for \$17.90. This corresoponds to \$5.97 per board.
