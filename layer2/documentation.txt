@@ -1,3 +1,4 @@
+
 Sharkduinov1 Layer 2
 ======================
 This board was designed by William Laney as part of the College of William and Mary's physics REU program, 2016. 
@@ -6,6 +7,7 @@ Questions or concerns can be directed to William Laney at welaney@email.wm.edu
 This is a breakout board for the DS3234 IC and the MCP7381 IC. The DS3234 is a real time clock (RTC) with battery backup. The MCP7381 is a power regulator for LiPo battery charging from USB. This board can be viewed as a shield for an 3.3V Arduino Pro Mini as it can stack on top of the pro mini.
 
 In addition to the ICs listed above, this board contains a female micro USB (uUSB) port, a 12mm coin cell slot, and a male JPL 2 prong connector. The male JPL 2 prong connector connects the LiPo battery to the board. The 12mm coin cell slot holds a CR1225 coin cell battery that acts as the battery backup for the DS3234. The female uUSB port is for charging the LiPo battery.
+
 
 Desgine Inofrmation
 --------------------
@@ -37,6 +39,7 @@ The white dot on the silk screen corresponds to a dot on the same location on th
 
 On July 7 2016, six v1 boards were ordered from OSHpark for $14.10. This corresponds to $2.35 per board.
 
+
 Assembily Information
 -------------------------
 Assemblie steps:
@@ -53,7 +56,7 @@ Assemblie steps:
 10) Place 12mm coin cell slot
 11) Applie solder past for uUSB female connector
 12) Place uUSB female connector
-13) Placed full board into solder reflow oven
+13) Place full board into solder reflow oven
 14) Wipe down with isopropal alchohal
 15) Applie hot glue around uUSB female connector
 16) Solder on JPL 2 prong connectro with soldering iron
@@ -70,6 +73,7 @@ Solder paste must be put on the pad under the 12mm coin cell slot. While no comp
 
 When appling the uUSB connector be carful, it is very easy so slide out of alginment. Addionaly do not try to use it until it is hot glued into place. The solder does not firmly attach the connector to the board.
 
+
 Feature Requests/ Improvents
 ----------------------------
 add I2C pins for breakout to layer3 board
@@ -80,12 +84,14 @@ square/ aline components
 remove pin hole next to batt (pin 4)
 rexeaine charging circuity to insure that the LED indicator light is correct
 
+
 V1.1 Changes
 =================
 Spelled sharkduino correctly
 Removed pin 4
 moved batt up board
 The LED chargin circuit appears to be correct. The LED was installed backward
+
 
 V1.1 notes
 --------------

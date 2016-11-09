@@ -11,3 +11,17 @@ The uSD slots connect throught SPI. Each of the slots has spereate SPI and power
  Each slot has a bottom and top ground pour suronding it, however these ground pours are not connected. There is no copper between the each of the uSD slots. This allows for easy seperation of the slots.
 
 On October 28, 2016 three boards were ordered form OSHpark for \$17.90. This corresoponds to \$5.97 per board.
+
+## Assembly Information
+
+1. Applie solder paste for uSD slots
+2. Place uSD slots
+3. Place full board into solder reflow oven
+4. Wipe down with isopropal alchohal 
+5. Check if board is shorted between GND and VCC for each slot indivualy
+
+## Notes/feature requests
+
+The Amphenol uSD slot did not work with two trys, do not know where the problem is introduced. Will use one of the other slots instead
+
+The silk between the uSD slot pin breakouts make it hard to determine if the slot has a solder bridge, remove this line in future versions
