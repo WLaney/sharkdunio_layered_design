@@ -50,3 +50,5 @@ Before appling the ICs carfuly inspect the soldered passive componts. If anythin
 Feature Requests/ Improvents
 ----------------------------
 test if the TMP102 is needed. The tempreture sensor in the MS5803-14BA may be sufficent or even superior.
+
+Test higher reisotr values for sensors
