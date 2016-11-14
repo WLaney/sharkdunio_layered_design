@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
@@ -945,6 +945,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C4" library="microbuilder" package="0805-NO" value="0.1uF" x="29.845" y="8.89" rot="R180"/>
 <element name="C5" library="microbuilder" package="0805-NO" value="0.1uF" x="31.115" y="12.7" rot="R90"/>
 <element name="C6" library="microbuilder" package="0805-NO" value="0.1uF" x="28.575" y="12.7" rot="R90"/>
+<element name="J5" library="SparkFun-Connectors" package="1X02_LOCK" value="" x="1.905" y="-6.35"/>
 </elements>
 <signals>
 <signal name="BYP">
@@ -1033,6 +1034,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="34.605" y1="10.88" x2="34.56" y2="10.925" width="0.254" layer="1"/>
 <via x="33.02" y="1.27" extent="1-16" drill="0.508"/>
 <via x="26.035" y="12.065" extent="1-16" drill="0.508"/>
+<contactref element="J5" pad="1"/>
+<wire x1="2.54" y1="3.81" x2="1.7272" y2="-6.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="U1" pad="4"/>
@@ -1148,6 +1151,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="45.0549" y1="22.095" x2="46.7749" y2="23.815" width="0.3048" layer="1"/>
 <wire x1="53.975" y1="17.78" x2="53.975" y2="20.32" width="0.254" layer="16"/>
 <wire x1="53.975" y1="20.32" x2="52.705" y2="21.59" width="0.254" layer="16"/>
+<contactref element="J5" pad="2"/>
+<wire x1="4.6228" y1="-6.35" x2="46.28" y2="11.795" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="+3V3">
 <contactref element="R1" pad="2"/>
