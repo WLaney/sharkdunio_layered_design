@@ -1,6 +1,7 @@
 component/value, size, quanity, digikey part number
 --------------------------------------------------------
-MMA8452QT, NA, 1, 	MMA8452QT-ND
+Arduino Pro Mini 3.3V/8MHz, NA, 1, 1568-1054-ND
+MMA8452QT, NA, 1, MMA8452QT-ND
 FXAS21002 IC, NA, 1, FXAS21002CQR1CT-ND
 DS1339B IC, NA, 1, DS1339BU+-ND
 Abracon LLC ABS25-32.768KHZ-T ,NA, 1, 535-9166-1-ND
@@ -17,3 +18,4 @@ Red LED, 0603, 1, 160-1447-1-ND
 USB micro SMD, NA, 1, 609-4053-1-ND
 Curved Battery Holder, 12mm, 1, 36-3000CT-ND
 JST Male, 2mm, 1, 455-1749-1-ND
+Male Header Pins, 0.10", 1, S1011EC-40-ND
