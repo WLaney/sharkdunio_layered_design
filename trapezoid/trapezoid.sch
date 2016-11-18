@@ -6191,6 +6191,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
+<net name="ACCEL_INT" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="INT1"/>
+<wire x1="63.5" y1="-15.24" x2="68.58" y2="-15.24" width="0.1524" layer="91"/>
+<label x="68.58" y="-15.24" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="6"/>
+<wire x1="12.7" y1="43.18" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
+<label x="20.32" y="43.18" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
