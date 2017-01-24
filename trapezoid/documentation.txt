@@ -118,10 +118,9 @@ Assembly steps:
 ## Notes/Feature Requests
 
 
-Standardise the trace size in the LiPo charging circuity
+~~Standardise the trace size in the LiPo charging circuity~~
 
 
-Move the external charging breakout pins to be wired before the LiPo charging IC
+~~Move the external charging breakout pins to be wired before the LiPo charging IC~~
 
-
-Label pin 3 on the silk screen 
+~~Label pin 3 on the silk screen~~ 
