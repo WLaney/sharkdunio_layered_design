@@ -5596,9 +5596,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.1uF"/>
 <part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="0.1uF"/>
 <part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="1.0uF"/>
-<part name="J5" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
-<part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$2" library="sharkdunio" deviceset="MOLEX_MICROSD" device=""/>
+<part name="J6" library="SparkFun-Connectors" deviceset="M02" device="LOCK"/>
 </parts>
 <sheets>
 <sheet>
@@ -5661,9 +5660,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C4" gate="G$1" x="154.94" y="53.34" rot="R90"/>
 <instance part="C5" gate="G$1" x="91.44" y="25.4" rot="R180"/>
 <instance part="C6" gate="G$1" x="106.68" y="25.4" rot="R180"/>
-<instance part="J5" gate="G$1" x="5.08" y="63.5"/>
-<instance part="GND11" gate="1" x="15.24" y="58.42"/>
 <instance part="U$2" gate="G$1" x="167.64" y="-2.54"/>
+<instance part="J6" gate="G$1" x="5.08" y="63.5"/>
 </instances>
 <busses>
 </busses>
@@ -5870,10 +5868,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="144.78" y1="91.44" x2="144.78" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="1"/>
+<pinref part="J6" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="63.5" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="15.24" y1="63.5" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
+<label x="15.24" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -6002,11 +5999,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U4" gate="G$1" pin="VBAT"/>
 <pinref part="JP1" gate="G$1" pin="+"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="J5" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="66.04" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
-<label x="17.78" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -6137,6 +6129,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="JP9" gate="G$1" pin="VBUS"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="C7" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="66.04" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
+<label x="15.24" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
