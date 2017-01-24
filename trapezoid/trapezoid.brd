@@ -241,6 +241,7 @@
 <text x="4.953" y="2.921" size="1.016" layer="21" font="vector" ratio="15" rot="R270">X</text>
 <text x="3.175" y="2.921" size="1.016" layer="21" font="vector" ratio="15" rot="R270">Y</text>
 <text x="1.397" y="2.921" size="1.016" layer="21" font="vector" ratio="15" rot="R270">Z</text>
+<text x="35.433" y="19.304" size="0.8128" layer="21" font="vector" ratio="15">3</text>
 </plain>
 <libraries>
 <library name="SparkFun">
