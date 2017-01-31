@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -177,7 +177,7 @@
 <text x="29.0576" y="9.6774" size="0.8128" layer="21" font="vector" ratio="15">0.1uF</text>
 <text x="25.273" y="9.7028" size="0.8128" layer="21" font="vector" ratio="15">0.1uF</text>
 <text x="35.56" y="4.572" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">10k</text>
-<text x="41.91" y="4.572" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">10k</text>
+<text x="42.799" y="4.572" size="0.8128" layer="21" font="vector" ratio="15">10k</text>
 <text x="36.576" y="9.144" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">10k</text>
 <text x="32.258" y="5.588" size="0.8128" layer="21" font="vector" ratio="15">47k</text>
 <text x="43.2435" y="10.0965" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">4.7uF</text>

@@ -98,7 +98,7 @@ Assembly steps:
 9. Remove the stencil and apply any more paste needed by hand
 10. Place the accel and gyro IC chips
 11. Place the RTC and LiPo chip
-12. Place the passive components, doing the ones closest to the ICs first and moving outward
+12. Place the passive components, doing the ones closest to the ICs first and moving outwardag
 13. Place LED
 14. Place the Oscillator chip
 15. Place the coin cell holder
