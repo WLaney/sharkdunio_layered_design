@@ -90,7 +90,8 @@ Assembly steps:
 4. Wipe down with isopropyl alcohol
 5. Place board on top of the jig so that it lays flat with the uSD facing down
 6. Place unused PCB boards around device on jig to give a level service around it
-7. Place solder stencil on top of device and unused PCBs, hold in place with  weighty objects (maybe tape but have not tried this)
+7. Place solder stencil on top of device and unused PCBs, hold in place with  weighty objects or tape
+   - I recomend using a lot of tape to hold everything in place. Tap the jig together, the tape the unused PCBs on top of the jig together, then tape the stence down and tape the whole thing to the table
 8. Put solder paste on the stencil and spread with the solder paste spreader
    * Make sure to spread paste over gyro and accel IC footprints first as these are the hardest to do by hand
    * Do the RTC and LiPo charger IC footprints next
