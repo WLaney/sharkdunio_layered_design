@@ -5607,6 +5607,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="96.52" y="203.2" size="1.778" layer="97">Set for 500mA charging</text>
 <text x="86.36" y="116.84" size="1.27" layer="97">I2C address: 0xd0</text>
 <text x="114.3" y="99.06" size="1.27" layer="97">I2C address: 0x20</text>
+<text x="43.18" y="-30.48" size="1.778" layer="97">MMA8451Q</text>
+<text x="43.18" y="-27.94" size="1.778" layer="97">OR</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="50.8" y="-12.7"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -184,7 +184,7 @@
 <text x="19.304" y="27.178" size="0.8128" layer="21" font="vector" ratio="15">ABS25</text>
 <text x="26.924" y="25.146" size="0.8128" layer="21" font="vector" ratio="15">DS1339</text>
 <text x="30.48" y="15.24" size="0.8128" layer="21" font="vector" ratio="15">FXAS21002</text>
-<text x="38.227" y="8.8265" size="0.8128" layer="21" font="vector" ratio="15">MMA8452Q</text>
+<text x="38.227" y="8.8265" size="0.8128" layer="21" font="vector" ratio="15">MMA8451Q</text>
 <text x="37.4015" y="25.146" size="0.8128" layer="21" font="vector" ratio="15">MCP73831</text>
 <text x="8.509" y="2.286" size="0.8128" layer="21" font="vector" ratio="15">CR1225</text>
 <text x="56.388" y="11.049" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">RAW</text>
