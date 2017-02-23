@@ -108,12 +108,13 @@ Assembly steps:
 18. Wipe down with isopropyl alcohol
 19. Check if board is shorted between GND and RAW
 20. Check if board is shorted between GND and VCC
-21. Solder on JPL 2 prong connector with soldering iron
-22. Hot glue uUSB port onto to the board
-23. Solder side header pins and I2C header pins onto Arduino Pro Mini
-24. Cut the bottom of the header pins off for pin numbers A0, 9, 5, and 4 (there is no holes for these pins on the sharkduino board)
-25. Solder Arduino Pro Mini onto Sharkduion board
-26. Place CR1225 battery into coin cell slot
+21. Check if board is shoarted between VCC and RAW
+22. Solder on JPL 2 prong connector with soldering iron
+23. Hot glue uUSB port onto to the board
+24. Solder side header pins and I2C header pins onto Arduino Pro Mini
+25. Cut the bottom of the header pins off for pin numbers A0, 9, 5, and 4 (there is no holes for these pins on the sharkduino board)
+26. Solder Arduino Pro Mini onto Sharkduion board
+27. Place CR1225 battery into coin cell slot
 
 
 ## Notes/Feature Requests
