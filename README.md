@@ -6,10 +6,14 @@ This repository contains the Eagle designs and design information for the Sharkd
 
 This is an explanation of the different sharkduino versions and the directories in this repository that contain them
 
-## Sharkduion V1
+## Sharkduino V1
 
 Sharkduino V1 uses a layer designs and consists of [layer1](layer1/), [layer2](layer2/), and [layer3](layer3/). The versions of Sharkduino V1 that were assembled corresponded to the release v2 named "Layered boards". Changes have been made to the boards since then in order to improve them, these changes constitute Sharkduino V1.1. No V1.1 boards were ever ordered or assembled. Instead of ordering V1.1 boards a design overhaul took place and we moved to sharkduino V2. 
 
 ## Sharkduino V2
 
 Sharkduino V2 constitutes a design overhaul from V1 with a new board shape and new set of sensors. These designs can be found in the [trapezoid](trapezoid/) directory. The version of Sharkduino V2 that has been assembled corresponds to release v5 "Sharkduion V2". Changes have been made to the board since then in order to improve them, these changes constitute Sharksuino V2.1. No V2.1 boards have been ordered or assembled but we plan to do so in the future. Since the enviromental sensors need to be sepreate from the movement sensors Shakrduino V2 still uses [layer3](layer3/) form the Sharkduino V1 as no changes to that board were nessary.
+
+## Sharkduino V2.1
+
+Sharkduino V2.1 is an identical PCB to V2, but it uses the MMA8451 accelerometer. This is opposed to the MMA8452 used in the V2. This change was made so that the accelerometer would have a FIFO bufer like the gyroscope. The new accelerometer is an expermental change, so the files are on the [MMA8451 branch](https://github.com/WLaney/sharkdunio_layered_design/tree/mma8451). If this change is successful that branch will be merged into master.
