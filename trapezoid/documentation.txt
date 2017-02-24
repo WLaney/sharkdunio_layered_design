@@ -1,0 +1,128 @@
+# Sharkduino V2
+
+
+This board was designed by William Laney as part of the College of William and Mary's physics undergraduate research, 2016. 
+Questions or concerns can be directed to William Laney at welaney@email.wm.edu
+
+
+This is a sensor board designed to be used with marine science research. This board consists of the following sensors and ports:
+
+
+* MMA8451QT 3-axis accelerometer
+* FXAS21002 3-axis gyroscope
+* DS1339B real time clock (RTC)
+* MCP73831 LiPo charger
+* Molex 8+2 pin microSD card slot
+* Female micro USB slot
+* Male JPL 2 prong connector
+
+
+The device takes data from the sensors and writes it to a microSD card with a timestamp for the RTC. It is powered by a LiPo battery that is connected to the JPL connector. This battery can be reached using the micro USB slot which is connected to the MCP73831 LiPo charger. In addition to recording data hardware interrupts are connected from the RTC and accelerometer to the Arduino.
+
+
+This board is designed to have a 3.3V, 8Mhz Arduino Pro Mini stack on top of the board.
+
+
+## Design Information
+
+
+Printed on the board's silk screen are labeled arrows corresponding to the positive direction of movement for the accelerometer. The positive direction for rotation of the gyroscope is aligned with these arrows, and represents rotation around these axis.
+
+
+The MMA8451QT is a 3-axis digital accelerometer. The chip uses I2C communication protocol. The I2C address for the MMA84510 is 0x1C in hex (00011100 in binary). The interrupt 1 pin on the accelerometer is broken out to pin 3 on the Arduino.
+
+
+The FXAS21002 is 3-axis digital gyroscope. The chip can use the I2C or SPI communication protocols, however only I2C has been broken out, SPI has been disabled. The I2C address for this chips is 0x20 in hex (100000 in binary).
+
+
+The DS1339B is a real time clock (RTC) with battery backup. This chip uses the I2C communication protocol. The address for this chip is 0xd0 in hex (11010000 in binary). The oscillator used in this design with the RTC is the Abracon LLC ABS25-32.768KHZ-T. It is a 32.768kHz quartz crystal oscillator, with a load capacitance of 12.5pF. A 12mm coin cell holder is used for the battery back up in this design. It is recommended to use a 3v 1225 coin cell battery. The squarewave/interrupt pin on the RTC is broken out to. 
+
+
+Data connections were not run underneath the DS1339B IC or the ABS25 as to not interfere with the oscillator. Two of the feet on the ABS25 exist for structural reasons. They are floating grounds and should not be attached to the true ground or any connections.
+
+
+The Molex microSD slot is connected through the arduino hardware SPI pins (11, 12, and 13) with pin 10 being used for chip select.
+
+
+The MCP7381 IC is not connected to any pins on the arduino. It connects the uUSB slot and the JPL 2 prong connector. Additionally it is connected to a red SMD LED that indicates when the LiPo battery is charging. 
+
+
+The male JPL 2 prong connector is connected to the RAW pin. Additionally two header pins are connected to RAW and ground. This was done to allow for additional power and charging options, however these headers are on the wrong side of the LiPo charger regulator to safety be used to charge the battery. This will be corrected in the next version of the device.
+
+
+The large white dot on the silkscreen in the area for the chip corresponds to a dot on the same location on the physical chip package, and assures that the chip is attached to the board with the proper orientation.
+
+
+Both the bottom and top layers of this board contain ground pours to insure proper grounding and to minimize noise and interference between signal traces.
+
+
+All traces on this board between the sensors and the arduino are 0.01" and the vias have 0.02" drill holes. This is more than sufficient to handle the current through the traces. Right angles in the trace are avoid to help ensure data integrity. The traces used in part of the LiPo charging circuity, and the connection between the JPL connector and the Arduino RAW pin are 0.012" and the vias have 0.02" drill holes. This additional size is to accommodate the larger amounts of current that could travel through these traces, however this size increase should be unnecessary and was done in part because there was available space on the board to do it.
+
+
+The board is arranged in a trapezoidal shape in order to more closely mirror the fin shape of a sandbar shark.
+
+
+The board is designed to have an Arduino Pro Mini sit on top of it and have the pins holes on the arduino aline with the pin holes on the board. However not every hole on the arduino has a corresponding pin on the board, this was done to allow gaps for traces to run through. The only pins on the arduino that are actively used by this device are RAW, GND, VCC, 2, 3, 10, 11, 12, 13, A4, and A5. All other pins on the arduino are floating.
+
+
+Decoupling capacitors were added as near to the chips as possible to minimize noise to the chips. This is detailed in the relevant data sheets.
+
+
+No vias were placed under the uSD reader to prevent accidental ground connections when the uSD card is inserted.
+
+
+0805 package size is used for all passive components. This size was selected because I believe it to be a good compromise between size and ease of placement. The LED indicator light uses an 0603 package size.
+
+
+On November 18, 2016 six boards were ordered from OSHpark for \$25.50. This corresponds to \$4.25 per board. Additionally on November 18, 2016 a 3mil polyimide film solder stencil for the top layer of the board was ordered from OSH Stencils for \$10.11.
+
+
+## Assembly Information
+
+
+Assembly steps:
+(please note that these steps represent what I believe to be the optimal order of operations. They may not be. Additionally not all boards were assembled in this way as I experimented with the order)
+
+
+1. Apply solder paste with syringe to uSD slot
+2. Place uSD slot
+3. Place board into solder reflow oven
+4. Wipe down with isopropyl alcohol
+5. Place board on top of the jig so that it lays flat with the uSD facing down
+6. Place unused PCB boards around device on jig to give a level service around it
+7. Place solder stencil on top of device and unused PCBs, hold in place with  weighty objects or tape
+   - I recomend using a lot of tape to hold everything in place. Tap the jig together, the tape the unused PCBs on top of the jig together, then tape the stence down and tape the whole thing to the table
+8. Put solder paste on the stencil and spread with the solder paste spreader
+   * Make sure to spread paste over gyro and accel IC footprints first as these are the hardest to do by hand
+   * Do the RTC and LiPo charger IC footprints next
+   * If you feel the stencil shift at all remove and do the rest of the board with the syringe
+9. Remove the stencil and apply any more paste needed by hand
+10. Place the accel and gyro IC chips
+11. Place the RTC and LiPo chip
+12. Place the passive components, doing the ones closest to the ICs first and moving outwardag
+13. Place LED
+14. Place the Oscillator chip
+15. Place the coin cell holder
+16. Place the uUSB port
+17. Place board into solder reflow oven
+18. Wipe down with isopropyl alcohol
+19. Check if board is shorted between GND and RAW
+20. Check if board is shorted between GND and VCC
+21. Check if board is shoarted between VCC and RAW
+22. Solder on JPL 2 prong connector with soldering iron
+23. Hot glue uUSB port onto to the board
+24. Solder side header pins and I2C header pins onto Arduino Pro Mini
+25. Cut the bottom of the header pins off for pin numbers A0, 9, 5, and 4 (there is no holes for these pins on the sharkduino board)
+26. Solder Arduino Pro Mini onto Sharkduion board
+27. Place CR1225 battery into coin cell slot
+
+
+## Notes/Feature Requests
+
+
+~~Standardise the trace size in the LiPo charging circuity~~
+
+
+~~Move the external charging breakout pins to be wired before the LiPo charging IC~~
+
+~~Label pin 3 on the silk screen~~ 
