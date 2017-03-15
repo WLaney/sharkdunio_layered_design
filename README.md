@@ -16,4 +16,4 @@ Sharkduino V2 constitutes a design overhaul from V1 with a new board shape and n
 
 ## Sharkduino V2.1
 
-Sharkduino V2.1 is an identical PCB to V2, but it uses the MMA8451 accelerometer. This is opposed to the MMA8452 used in the V2. This change was made so that the accelerometer would have a FIFO bufer like the gyroscope. The new accelerometer is an expermental change, so the files are on the [MMA8451 branch](https://github.com/WLaney/sharkdunio_layered_design/tree/mma8451). If this change is successful that branch will be merged into master.
+Sharkduino V2.1 is an identical PCB to V2, but it uses the MMA8451 accelerometer. This is opposed to the MMA8452 used in the V2. This change was made so that the accelerometer would have a FIFO bufer like the gyroscope. The new accelerometer is an expermental change, so the files are on the [MMA8451 branch](https://github.com/WLaney/sharkdunio_layered_design/tree/mma8451). This change has been merged in master.
