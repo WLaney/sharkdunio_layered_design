@@ -8,11 +8,7 @@ Questions or concerns can be directed to William Laney at welaney@email.wm.edu
 This is a sensor board designed to be used with marine science research. This board consists of the following sensors and ports:
 
 
-<<<<<<< HEAD
-* MMA8452QT 3-axis accelerometer
-=======
 * MMA8451QT 3-axis accelerometer
->>>>>>> mma8451
 * FXAS21002 3-axis gyroscope
 * DS1339B real time clock (RTC)
 * MCP73831 LiPo charger
