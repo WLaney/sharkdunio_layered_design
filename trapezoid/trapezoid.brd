@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -905,9 +905,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="J3" library="SparkFun-Connectors" package="1X02_LOCK" value="" x="37.084" y="5.461" smashed="yes">
 <attribute name="VALUE" x="35.814" y="2.286" size="1.27" layer="27"/>
 </element>
-<element name="JP1" library="SparkFun-Connectors" package="JST-2-SMD@1" value="JST" x="46.932" y="10.795" smashed="yes" rot="MR90">
-<attribute name="PROD_ID" value="CONN-08352" x="46.932" y="10.795" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="VALUE" x="46.932" y="9.525" size="0.4064" layer="28" rot="MR90"/>
+<element name="JP1" library="SparkFun-Connectors" package="JST-2-SMD@1" value="JST" x="52.763" y="23.495" smashed="yes" rot="R270">
+<attribute name="PROD_ID" value="CONN-08352" x="52.763" y="23.495" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="52.763" y="24.765" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="R1" library="microbuilder" package="0805-NO" value="10K" x="41.91" y="6.027" smashed="yes" rot="R90">
 <attribute name="VALUE" x="42.672" y="8.059" size="0.4064" layer="27" ratio="10" rot="R90"/>
@@ -1058,6 +1058,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="41.082" y1="10.155" x2="41.082" y2="10.988" width="0.254" layer="1"/>
 <wire x1="41.082" y1="10.988" x2="40.64" y2="11.43" width="0.254" layer="1"/>
 <contactref element="J6" pad="1"/>
+<via x="44.45" y="26.67" extent="1-16" drill="0.508"/>
 </signal>
 <signal name="SCL">
 <contactref element="U1" pad="4"/>
@@ -1159,8 +1160,13 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="JP1" pad="2"/>
 <contactref element="J4" pad="1"/>
 <contactref element="J6" pad="2"/>
-<wire x1="43.232" y1="11.795" x2="53.975" y2="12.2428" width="0" layer="19" extent="16-16"/>
-<wire x1="48.387" y1="2.54" x2="43.232" y2="11.795" width="0" layer="19" extent="16-16"/>
+<wire x1="49.063" y1="22.495" x2="49.063" y2="20.152" width="0.4064" layer="1"/>
+<wire x1="49.063" y1="20.152" x2="51.435" y2="17.78" width="0.4064" layer="1"/>
+<wire x1="51.435" y1="17.78" x2="51.435" y2="12.065" width="0.4064" layer="1"/>
+<wire x1="51.435" y1="12.065" x2="51.435" y2="5.588" width="0.4064" layer="1"/>
+<wire x1="51.435" y1="5.588" x2="48.387" y2="2.54" width="0.4064" layer="1"/>
+<wire x1="53.975" y1="12.2428" x2="51.6128" y2="12.2428" width="0.4064" layer="1"/>
+<wire x1="51.6128" y1="12.2428" x2="51.435" y2="12.065" width="0.4064" layer="1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="R1" pad="2"/>
