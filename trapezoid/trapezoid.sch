@@ -5714,6 +5714,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="20.32" y="40.64" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="5"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="INT2"/>
+<wire x1="83.82" y1="88.9" x2="73.66" y2="88.9" width="0.1524" layer="91"/>
+<label x="73.66" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
