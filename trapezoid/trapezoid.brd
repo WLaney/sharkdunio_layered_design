@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -22,8 +22,8 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -163,7 +163,7 @@
 <text x="22.733" y="21.717" size="1.016" layer="21" font="vector" ratio="15" rot="R270">X</text>
 <text x="20.955" y="21.717" size="1.016" layer="21" font="vector" ratio="15" rot="R270">Y</text>
 <text x="19.177" y="21.717" size="1.016" layer="21" font="vector" ratio="15" rot="R270">Z</text>
-<text x="6.223" y="15.24" size="1.016" layer="21" font="vector" ratio="15">Sharkduino V2</text>
+<text x="5.715" y="15.24" size="1.016" layer="21" font="vector" ratio="15">Sharkduino V2.2</text>
 <text x="32.512" y="24.892" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">0.1uF</text>
 <text x="34.544" y="21.844" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">10k</text>
 <text x="41.656" y="15.494" size="0.8128" layer="21" font="vector" ratio="15">0.1uF</text>
@@ -175,7 +175,7 @@
 <text x="35.56" y="4.572" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">10k</text>
 <text x="42.799" y="4.572" size="0.8128" layer="21" font="vector" ratio="15">10k</text>
 <text x="36.576" y="9.144" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">10k</text>
-<text x="20.193" y="7.493" size="0.8128" layer="21" font="vector" ratio="15">47k</text>
+<text x="28.448" y="4.953" size="0.8128" layer="21" font="vector" ratio="15">47k</text>
 <text x="43.2435" y="10.0965" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">4.7uF</text>
 <text x="19.304" y="27.178" size="0.8128" layer="21" font="vector" ratio="15">ABS25</text>
 <text x="26.924" y="25.146" size="0.8128" layer="21" font="vector" ratio="15">DS1339</text>
@@ -210,8 +210,8 @@
 <text x="55.626" y="11.049" size="0.8128" layer="22" font="vector" ratio="15" rot="MR90">RAW</text>
 <text x="38.481" y="19.05" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0">2</text>
 <text x="41.783" y="19.05" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0">GND</text>
-<text x="42.672" y="26.67" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">Sharkduino V2</text>
-<text x="42.672" y="24.638" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">William Laney  2016</text>
+<text x="42.672" y="26.67" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">Sharkduino V2.2</text>
+<text x="42.672" y="24.638" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">William Laney  2017</text>
 <text x="42.672" y="22.606" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">W&amp;M Physics  VIMS</text>
 <text x="42.672" y="20.828" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">welaney@email.wm.edu</text>
 <wire x1="54.737" y1="5.715" x2="55.753" y2="5.715" width="0.254" layer="21"/>
@@ -236,16 +236,17 @@
 <text x="3.175" y="2.921" size="1.016" layer="21" font="vector" ratio="15" rot="R270">Y</text>
 <text x="1.397" y="2.921" size="1.016" layer="21" font="vector" ratio="15" rot="R270">Z</text>
 <text x="35.433" y="19.304" size="0.8128" layer="21" font="vector" ratio="15">3</text>
-<wire x1="44.577" y1="24.765" x2="45.593" y2="24.765" width="0.254" layer="21"/>
-<wire x1="44.577" y1="24.765" x2="44.958" y2="24.384" width="0.254" layer="21"/>
-<wire x1="44.577" y1="24.765" x2="44.958" y2="25.146" width="0.254" layer="21"/>
-<circle x="45.085" y="21.209" radius="0.127" width="0.254" layer="21"/>
-<text x="43.561" y="22.479" size="1.016" layer="21" font="vector" ratio="15">X</text>
-<text x="43.561" y="24.257" size="1.016" layer="21" font="vector" ratio="15">Y</text>
-<text x="43.561" y="20.701" size="1.016" layer="21" font="vector" ratio="15">Z</text>
-<wire x1="45.085" y1="23.495" x2="45.085" y2="22.479" width="0.254" layer="21"/>
-<wire x1="45.085" y1="23.495" x2="44.704" y2="23.114" width="0.254" layer="21"/>
-<wire x1="45.085" y1="23.495" x2="45.466" y2="23.114" width="0.254" layer="21"/>
+<wire x1="41.783" y1="25.781" x2="42.799" y2="25.781" width="0.254" layer="21"/>
+<wire x1="41.783" y1="25.781" x2="42.164" y2="25.4" width="0.254" layer="21"/>
+<wire x1="41.783" y1="25.781" x2="42.164" y2="26.162" width="0.254" layer="21"/>
+<circle x="42.291" y="22.225" radius="0.127" width="0.254" layer="21"/>
+<text x="40.767" y="23.495" size="1.016" layer="21" font="vector" ratio="15">X</text>
+<text x="40.767" y="25.273" size="1.016" layer="21" font="vector" ratio="15">Y</text>
+<text x="40.767" y="21.717" size="1.016" layer="21" font="vector" ratio="15">Z</text>
+<wire x1="42.291" y1="24.511" x2="42.291" y2="23.495" width="0.254" layer="21"/>
+<wire x1="42.291" y1="24.511" x2="41.91" y2="24.13" width="0.254" layer="21"/>
+<wire x1="42.291" y1="24.511" x2="42.672" y2="24.13" width="0.254" layer="21"/>
+<text x="35.941" y="19.05" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0">3</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -727,37 +728,34 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="oshpark-2layer">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="SparkFun">
+<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
-&lt;p&gt;
-Please make sure your boards conform to these design rules.</description>
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
-<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
-<param name="mdWireVia" value="6mil"/>
-<param name="mdPadPad" value="6mil"/>
-<param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="8mil"/>
+<param name="mdWirePad" value="8mil"/>
+<param name="mdWireVia" value="8mil"/>
+<param name="mdPadPad" value="8mil"/>
+<param name="mdPadVia" value="8mil"/>
+<param name="mdViaVia" value="8mil"/>
+<param name="mdSmdPad" value="8mil"/>
+<param name="mdSmdVia" value="8mil"/>
+<param name="mdSmdSmd" value="8mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="15mil"/>
-<param name="mdDrill" value="6mil"/>
+<param name="mdCopperDimension" value="8mil"/>
+<param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
-<param name="msDrill" value="13mil"/>
-<param name="msMicroVia" value="13mil"/>
+<param name="msWidth" value="8mil"/>
+<param name="msDrill" value="20mil"/>
+<param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -766,15 +764,15 @@ Please make sure your boards conform to these design rules.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="7mil"/>
+<param name="rlMinPadTop" value="12mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="7mil"/>
+<param name="rlMinPadInner" value="10mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="7mil"/>
+<param name="rlMinPadBottom" value="12mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="7mil"/>
+<param name="rlMinViaOuter" value="10mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="7mil"/>
+<param name="rlMinViaInner" value="10mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -787,11 +785,11 @@ Please make sure your boards conform to these design rules.</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="2.5mil"/>
-<param name="mlMaxStopFrame" value="2.5mil"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="20mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -979,7 +977,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$2" library="sharkdunio" package="MOLEX_MICROSD" value="MOLEX_MICROSD" x="13.462" y="6.35" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="19.462" y="4.35" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="J6" library="SparkFun-Connectors" package="1X02_LOCK" value="" x="53.975" y="9.525" rot="R90"/>
+<element name="J6" library="SparkFun-Connectors" package="1X02_LOCK" value="" x="53.975" y="9.525" smashed="yes" rot="R90">
+<attribute name="VALUE" x="57.15" y="8.255" size="1.27" layer="27" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="BYP">
@@ -1294,15 +1294,18 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$1" pad="2"/>
 <via x="33.9725" y="9.017" extent="1-16" drill="0.508"/>
 <wire x1="38.227" y1="17.78" x2="38.227" y2="18.923" width="0.254" layer="16"/>
-<wire x1="38.227" y1="18.923" x2="36.83" y2="20.32" width="0.254" layer="16"/>
 <wire x1="33.652" y1="11.7" x2="34.655" y2="11.7" width="0.254" layer="1"/>
 <wire x1="34.655" y1="11.7" x2="34.925" y2="11.43" width="0.254" layer="1"/>
 <wire x1="34.925" y1="11.43" x2="34.925" y2="9.9695" width="0.254" layer="1"/>
 <wire x1="34.925" y1="9.9695" x2="33.9725" y2="9.017" width="0.254" layer="1"/>
-<wire x1="36.83" y1="20.32" x2="35.56" y2="20.32" width="0.254" layer="16"/>
-<wire x1="35.56" y1="20.32" x2="34.29" y2="19.05" width="0.254" layer="16"/>
-<wire x1="34.29" y1="19.05" x2="34.29" y2="9.3345" width="0.254" layer="16"/>
 <wire x1="34.29" y1="9.3345" x2="33.9725" y2="9.017" width="0.254" layer="16"/>
+<wire x1="38.227" y1="18.923" x2="37.465" y2="19.685" width="0.254" layer="16"/>
+<wire x1="37.465" y1="19.685" x2="35.56" y2="19.685" width="0.254" layer="16"/>
+<wire x1="35.56" y1="19.685" x2="34.29" y2="18.415" width="0.254" layer="16"/>
+<wire x1="34.29" y1="18.415" x2="34.29" y2="15.24" width="0.254" layer="16"/>
+<wire x1="34.29" y1="15.24" x2="34.925" y2="14.605" width="0.254" layer="16"/>
+<wire x1="34.925" y1="14.605" x2="34.925" y2="9.9695" width="0.254" layer="16"/>
+<wire x1="34.925" y1="9.9695" x2="33.9725" y2="9.017" width="0.254" layer="16"/>
 </signal>
 <signal name="N$5">
 <contactref element="Y1" pad="1"/>
