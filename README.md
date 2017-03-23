@@ -23,6 +23,6 @@ Sharkduino V2.1 is an identical PCB to V2, but it uses the MMA8451 accelerometer
 
 Sharkduino V2.2 is a slight varation on the Sharkduino V2.x desgine. Due to the [issue with the cargining circuity](https://github.com/WLaney/sharkdunio_layered_design/issues/1) the microUSB and lipo charger were removed from the board. This was done in order to have a set of fully functional board ready for summer 2017. 
 
-The LiPo plug was moved to the top of the board in order to streamline the desgine. Additionaly interupt pin2 on the FXAS21002 gyroscope was connected Arduino pin 3. 
+The LiPo plug was moved to the top of the board in order to streamline the desgine. Additionaly interupt pin2 on the FXAS21002 gyroscope was connected Arduino pin 2. 
 
 Since in the long term we plan to fix the LiPo charging issue, instead of removing the LiPo chargin all together as we have done here, the files for Sharkduino V2.2 are on the [no_chargin branch](https://github.com/WLaney/sharkdunio_layered_design/tree/no_charging) and will never be merged into master. The desgines of the Sharkduino V2.2 that have been order corosponed to release [v8](https://github.com/WLaney/sharkdunio_layered_design/releases/tag/v8). 
