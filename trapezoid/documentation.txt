@@ -1,4 +1,4 @@
-# Sharkduino V2
+# Sharkduino V2.1
 
 
 This board was designed by William Laney as part of the College of William and Mary's physics undergraduate research, 2016. 
