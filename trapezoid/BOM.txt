@@ -19,3 +19,4 @@ USB micro SMD, NA, 1, 609-4053-1-ND
 Curved Battery Holder, 12mm, 1, 36-3000CT-ND
 JST Male, 2mm, 1, 455-1749-1-ND
 Male Header Pins, 0.10", 1, S1011EC-40-ND
+BATTERY LITHIUM 3V COIN 12.5MM, BR1225, 1, P183-ND
