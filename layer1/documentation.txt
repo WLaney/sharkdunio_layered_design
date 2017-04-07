@@ -2,7 +2,7 @@ Sharkduinov1 Layer 1
 ======================
 This board was designed by William Laney as part of the College of William and Mary's physics REU program, 2016.  Questions or concerns can be directed at William Laney at welaney@email.wm.edu
 
-This is a breakout board for the MMA84520 IC (3-axis accelerometer), L3GD20H IC (3-axis gyroscope), and Transflash microSD (uSD) reader. This board can be viewed as a shield for an 3.3V Arduino Pro Mini, as it can stack on top of the Pro Mini. Both the MMA84520 and L3GD20H communicate using the I2C protocol, with the non-I2C functionality of both chips disabled. This includes interrupts from the chips and the SPI functionality of the L3GD20H. 
+This is a breakout board for the MMA8452 IC (3-axis accelerometer), L3GD20H IC (3-axis gyroscope), and Transflash microSD (uSD) reader. This board can be viewed as a shield for an 3.3V Arduino Pro Mini, as it can stack on top of the Pro Mini. Both the MMA84520 and L3GD20H communicate using the I2C protocol, with the non-I2C functionality of both chips disabled. This includes interrupts from the chips and the SPI functionality of the L3GD20H. 
 
 The I2C address for the L3GD20H IC is 0x6B in hex (0b1101011 in binary). The I2C address for the MMA84520 is 0x1C in hex (00011100b).
 
