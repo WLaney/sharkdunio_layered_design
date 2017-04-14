@@ -1,6 +1,6 @@
 # sharkduino_layered_desgine
 
-This repository contains the Eagle designs and design information for the Sharkduino PCBs. The name sharkduino_layered_desgin is a legacy name referring to the design type used by Sharkduino V1. This repository does however contains all versions of Shakrduino, not just V1. Please see [Sharkduino Versions](#sharkduino-versions) for more information.
+This repository contains the Eagle designs and design information for the Sharkduino PCBs. The name sharkduino_layered_desgin is a legacy name referring to the design type used by Sharkduino V1. This repository does however contains all versions of Shakrduino, not just V1. Please see [Sharkduino Versions](#sharkduino-versions) for more information. For the spefic chips and ports on each version please see [Hardware Quick Reference](https://github.com/WLaney/sharkdunio_layered_design/blob/master/hardware_quick_reference.md)
 
 # Sharkduino Versions
 
