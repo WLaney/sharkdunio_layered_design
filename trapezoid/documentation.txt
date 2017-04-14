@@ -1,4 +1,4 @@
-# Sharkduino V2
+# Sharkduino V2.2
 
 
 This board was designed by William Laney as part of the College of William and Mary's physics undergraduate research, 2017. 
@@ -12,7 +12,6 @@ This is a sensor board designed to be used with marine science research. This bo
 * FXAS21002 3-axis gyroscope
 * DS1339B real time clock (RTC)
 * Molex 8+2 pin microSD card slot
-* Female micro USB slot
 * Male JPL 2 prong connector
 
 
@@ -90,35 +89,24 @@ Assembly steps:
    - I recomend using a lot of tape to hold everything in place. Tap the jig together, the tape the unused PCBs on top of the jig together, then tape the stence down and tape the whole thing to the table
 8. Put solder paste on the stencil and spread with the solder paste spreader
    * Make sure to spread paste over gyro and accel IC footprints first as these are the hardest to do by hand
-   * Do the RTC and LiPo charger IC footprints next
+   * Do the RTC and footprint next
    * If you feel the stencil shift at all remove and do the rest of the board with the syringe
 9. Remove the stencil and apply any more paste needed by hand
 10. Place the accel and gyro IC chips
-11. Place the RTC and LiPo chip
+11. Place the RTC chip
 12. Place the passive components, doing the ones closest to the ICs first and moving outwardag
-13. Place LED
-14. Place the Oscillator chip
-15. Place the coin cell holder
-16. Place the uUSB port
-17. Place board into solder reflow oven
-18. Wipe down with isopropyl alcohol
-19. Check if board is shorted between GND and RAW
-20. Check if board is shorted between GND and VCC
-21. Check if board is shoarted between VCC and RAW
-22. Solder on JPL 2 prong connector with soldering iron
-23. Hot glue uUSB port onto to the board
-24. Solder side header pins and I2C header pins onto Arduino Pro Mini
-25. Cut the bottom of the header pins off for pin numbers A0, 9, 5, and 4 (there is no holes for these pins on the sharkduino board)
-26. Solder Arduino Pro Mini onto Sharkduion board
-27. Place CR1225 battery into coin cell slot
+13. Place the Oscillator chip
+14. Place the coin cell holder
+15. Place board into solder reflow oven
+16. Wipe down with isopropyl alcohol
+17. Check if board is shorted between GND and RAW
+18. Check if board is shorted between GND and VCC
+19. Check if board is shoarted between VCC and RAW
+20. Solder on JPL 2 prong connector with soldering iron
+21. Solder side header pins and I2C header pins onto Arduino Pro Mini
+22. Cut the bottom of the header pins off for pin numbers A0, 9, 5, and 4 (there is no holes for these pins on the sharkduino board)
+23. Solder Arduino Pro Mini onto Sharkduion board
+24. Place CR1225 battery into coin cell slot
 
 
 ## Notes/Feature Requests
-
-
-~~Standardise the trace size in the LiPo charging circuity~~
-
-
-~~Move the external charging breakout pins to be wired before the LiPo charging IC~~
-
-~~Label pin 3 on the silk screen~~ 
