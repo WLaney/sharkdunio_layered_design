@@ -8,6 +8,7 @@
 * Run [oshpark-2layer DRC](http://docs.oshpark.com/design-tools/eagle/design-rules-files/)
 * Run [SparkFun DRC](https://www.sparkfun.com/tutorials/115)
   * Please note that this DRC will throw errors for tolerance that OSHpark can handle, when in doubt trust the OSH Park DRC
+* Run [oshpark-2layer DRC](http://docs.oshpark.com/design-tools/eagle/design-rules-files/) again
 * Run ERC
 * If multiple trace sizes are used confirm that they are consistent, and that traces have the same width for there full length
 * check components on board against the BOM
