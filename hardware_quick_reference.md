@@ -59,8 +59,6 @@
   * Interrupt wired to Arduino pin 2
 * Push-Pull microSD slot
 * JPL male 2 prong connector
-* [Broken] MCP7381 LiPo Charge Management Controller
-* [Broken] Micro USB female port
 * 12mm coin cell slot
 ### On separate layer 3 board
 * TMP102 Temperature Sensor
